@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DivulPlace | Perfil </title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../components/Ionicons/css/ionicons.min.css">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="../components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="../plugins/iCheck/all.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect. -->
+  <link rel="stylesheet" href="../css/skins/skin-blue.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="painel.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><span class="divulplace-brand-sgl"></span></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="divulplace-brand"></span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Tasks Menu -->
+          <li class="dropdown messages-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-paper-plane-o"></i>
+              <span class="label label-warning">9</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">Você tem 9 recados</li>
+              <li>
+                <!-- inner menu: contains the messages -->
+                <ul class="menu">
+                  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        01
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Maria Gonzales
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Gostaria de saber...</p>
+                    </a>
+                  </li>
+				  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                       02
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Luna Stark
+                        <small><i class="fa fa-clock-o"></i> 10 mins</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Qual é a margem de...</p>
+                    </a>
+                  </li>
+				  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        03
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Nora Havisham
+                        <small><i class="fa fa-clock-o"></i> 2 horas</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Você pode me ajudar?</p>
+                    </a>
+                  </li>
+				  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        04
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Filipe
+                        <small><i class="fa fa-clock-o"></i> 1 dia</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Descobri que no final do mês...</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                </ul>
+                <!-- /.menu -->
+              </li>
+              <li class="footer"><a href="#">Ver todas</a></li>
+            </ul>
+          </li>
+          <!-- Messages: style can be found in dropdown.less-->
+          <li class="dropdown messages-menu">
+            <!-- Menu toggle button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success">4</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">Você tem 4 mensagens</li>
+              <li>
+                <!-- inner menu: contains the messages -->
+                <ul class="menu">
+                  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <!-- User Image -->
+                        <img src="../img/user.png" class="img-circle" alt="User Image">
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Afiliado 001
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Bem vindo meu amigo!</p>
+                    </a>
+                  </li>
+				  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <!-- User Image -->
+                        <img src="../img/user.png" class="img-circle" alt="User Image">
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Afiliado 002
+                        <small><i class="fa fa-clock-o"></i> 10 mins</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Você já subiu de Grau?</p>
+                    </a>
+                  </li>
+				  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <!-- User Image -->
+                        <img src="../img/user.png" class="img-circle" alt="User Image">
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Afiliado 003
+                        <small><i class="fa fa-clock-o"></i> 2 horas</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Sou novo aqui, você pode me ajudar?</p>
+                    </a>
+                  </li>
+				  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <!-- User Image -->
+                        <img src="../img/user.png" class="img-circle" alt="User Image">
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Afiliado 004
+                        <small><i class="fa fa-clock-o"></i> 1 dia</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Acabei de atualizar meu portifólio!</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                </ul>
+                <!-- /.menu -->
+              </li>
+              <li class="footer"><a href="#">Ver todas</a></li>
+            </ul>
+          </li>
+          <!-- /.messages-menu -->
+
+          <!-- Notifications Menu -->
+          <li class="dropdown notifications-menu">
+            <!-- Menu toggle button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-danger">10</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">Você têm 10 avisos</li>
+              <li>
+                <!-- Inner Menu: contains the notifications -->
+                <ul class="menu">
+                  <li><!-- start notification -->
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 2 afiliados novos hoje
+                    </a>
+                  </li>
+                  <!-- end notification -->
+				   <li><!-- start notification -->
+                    <a href="#">
+                      <i class="fa fa-users text-red"></i> 2 afiliados saíram hoje
+                    </a>
+                  </li>
+                  <!-- end notification -->
+				   <li><!-- start notification -->
+                    <a href="#">
+                      <i class="fa fa-shopping-cart text-green"></i> 4 afiliados pagaram hoje
+                    </a>
+                  </li>
+                  <!-- end notification -->
+				   <li><!-- start notification -->
+                    <a href="#">
+                      <i class="fa fa-warning text-yellow"></i> Erro no seu pagamento
+                    </a>
+                  </li>
+                  <!-- end notification -->
+				   <li><!-- start notification -->
+                    <a href="#">
+                      <i class="fa fa-user text-green"></i> Você atualizou seu perfil
+                    </a>
+                  </li>
+                  <!-- end notification -->
+                </ul>
+              </li>
+              <li class="footer"><a href="#">Ver todos</a></li>
+            </ul>
+          </li>
+          <!-- User Account Menu -->
+          <li class="dropdown user user-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- The user image in the navbar-->
+              <img src="../img/user.png" class="user-image" alt="User Image">
+              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+              <span class="hidden-xs">Nome Usuário</span>
+            </a>
+            <ul class="dropdown-menu">
+			  <!-- Widget: user widget style 1 -->
+			  <div class="box box-widget widget-user" style="margin-bottom: 0px;">
+				<!-- Add the bg color to the header using any of the bg-* classes -->
+				<div class="widget-user-header bg-aqua-active">
+				  <h3 class="widget-user-username">Nome Usuário</h3>
+				  <h5 class="widget-user-desc">Promoter Start</h5>
+				</div>
+				<div class="widget-user-image">
+				  <img class="img-circle" src="../img/user.png" alt="User Avatar">
+				</div>
+				<div class="box-footer">
+				  <div class="row">
+					<div class="col-sm-4 border-right">
+					  <div class="description-block">
+						<h5 class="description-header">1.600</h5>
+						<span class="description-text">Disponível</span>
+					  </div>
+					  <!-- /.description-block -->
+					</div>
+					<!-- /.col -->
+					<div class="col-sm-4 border-right">
+					  <div class="description-block">
+						<h5 class="description-header">800</h5>
+						<span class="description-text">Visitas</span>
+					  </div>
+					  <!-- /.description-block -->
+					</div>
+					<!-- /.col -->
+					<div class="col-sm-4">
+					  <div class="description-block">
+						<h5 class="description-header">100</h5>
+						<span class="description-text">Afiliados</span>
+					  </div>
+					  <!-- /.description-block -->
+					</div>
+					<!-- /.col -->
+				  </div>
+				  <!-- /.row -->
+				</div>
+			  </div>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Portifólio</a>
+                </div>
+                <div class="pull-right">
+                  <a href="../index.html" class="btn btn-default btn-flat">Sair</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="../img/user.png" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Nome Usuário</p>
+          <!-- Status -->
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">MENU</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li><a href="inicio.html"><i class="fa fa-home"></i> <span>Início</span></a></li>
+        <li><a href="painel.html"><i class="fa fa-dashboard"></i> <span>Painel de Controle</span></a></li>
+		<li class="active"><a href="perfil.html"><i class="fa fa-user-circle"></i> <span>Perfil</span></a></li>
+		<li class="header">SERVIÇOS</li>
+		<li><a href="#"><i class="fa fa-address-book-o"></i> <span>Portifólio</span></a></li>
+		<li><a href="#"><i class="fa fa-files-o"></i> <span>Folder/Flyer</span></a></li>
+		<li><a href="#"><i class="fa fa-id-card-o"></i> <span>Cartão de Visitas</span></a></li>
+		<li><a href="#"><i class="fa fa-caret-square-o-right""></i> <span>Vídeos</span></a></li>
+		<li class="header">FINCANCEIRO</li>
+		<li><a href="#"><i class="fa fa-shopping-cart"></i> <span>Mensalidade</span></a></li>
+		<li><a href="#"><i class="fa fa-money"></i> <span>Monetização</span></a></li>
+		<li><a href="#"><i class="fa fa-bank"></i> <span>Conta</span></a></li>
+		<li class="header">CORRESPONDÊNCIA</li>
+		<li><a href="mensagens.html"><i class="fa fa-envelope-o"></i> <span>Mensagens</span></a></li>
+		<li><a href="#"><i class="fa fa-paper-plane-o"></i> <span>Recados</span></a></li>
+		<li><a href="#"><i class="fa fa-bell-o"></i> <span>Avisos</span></a></li>
+		<li class="header">PAGAMENTO</li>
+		<li class="header">
+			<a href="#">
+				<div class="col-xs-6 col-md-3 text-center">
+				  <input type="text" class="knob" value="10" data-linecap="round" data-width="90" data-height="90" data-min="1" data-max="31" data-fgColor="#3c8dbc" data-readonly="true">
+				</div>
+			</a>
+		</li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Perfil
+        <small>Bem vindo!</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="inicio.html"><i class="fa fa-home"></i> Início</a></li>
+		<li><a href="painel.html">Painel de Controle</a></li>
+        <li class="active">Perfil</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+		<!-- /.row -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="box box-info">
+					<div class="box-header with-border">
+						<h3 class="box-title">Dados Pessoais</h3>
+					</div>
+					<!-- /.box-header -->
+					<div class="box-body">
+						<form class="form-horizontal">
+							<div class="col-md-3 text-center">
+								<div class="form-group">
+									<div class="col-md-12">
+										<div class="form-group">
+										</div>
+										<div class="form-group">
+											<img class="img-circle" src="../img/user.png" alt="Usuário">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="btn btn-default btn-file">
+										<i class="fa fa-picture-o"></i> Trocar Imagem
+										<input type="file" name="attachment">
+									</div>
+									<p class="help-block"></p>
+								</div>
+							</div>
+							<!-- /.col -->
+							<div class="col-md-9">
+								<div class="form-group">
+									<label for="outputId" class="col-sm-6 control-label">Seu ID:</label>
+									<div class="col-sm-4">
+										<label class="control-label">____________________________</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputTratamento" class="col-sm-3 control-label">Tratamento</label>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" id="inputTratamento" placeholder="Sr., Sra., V.Exa, V.Maga, etc">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputNome" class="col-sm-3 control-label">Nome</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" id="inputNome" placeholder="Nome">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputApelido" class="col-sm-3 control-label">Apelido</label>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" id="inputApelido" placeholder="Apelido">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputCpf" class="col-sm-3 control-label">CPF</label>
+									<div class="col-sm-4">
+										<input id="inputCpf" type="text" class="form-control" data-inputmask='"mask": "999.999.999-99"' data-mask>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputNascimento" class="col-sm-3 control-label">Data de Nascimento</label>
+									<div class="col-sm-4">
+										<div class="input-group">
+											<div class="input-group-addon">
+												<i class="fa fa-calendar"></i>
+											</div>
+											<input id="inputNascimento" type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="selectCivil" class="col-sm-3 control-label">Estado Civil</label>
+									<div class="col-sm-6">
+										<select id="selectCivil" class="form-control">
+											<option>Selecione...</option>
+											<option>Solteiro</option>
+											<option>Casado</option>
+											<option>Relacionamento Estável</option>
+											<option>etc...</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="radioSexo" class="col-sm-3 control-label">Sexo</label>
+									<div class="col-sm-9">
+										<label>
+										  <input type="radio" name="r1" class="minimal" checked>
+										  Masculino
+										</label>
+										<label>
+										  <input type="radio" name="r1" class="minimal">
+										  Feminino
+										</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="areaSobre" class="col-sm-3 control-label">Sobre</label>
+									<div class="col-sm-6">
+										<textarea id="Sobre" class="form-control" rows="3" placeholder="Sobre ..."></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputEmail" class="col-sm-3 control-label">E-mail</label>
+									<div class="col-sm-9">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+											<input id="inputEmail" type="email" class="form-control" placeholder="E-mail">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputSenha" class="col-sm-3 control-label">Senha</label>
+									<div class="col-sm-4">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+											<input type="password" class="form-control" id="inputSenha" placeholder="Senha">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputNovaSenha" class="col-sm-3 control-label">Nova Senha</label>
+									<div class="col-sm-4">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+											<input type="password" class="form-control" id="inputNovaSenha" placeholder="Nova Senha">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputConfirmaSenha" class="col-sm-3 control-label">Confirmar Senha</label>
+									<div class="col-sm-4">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+											<input type="password" class="form-control" id="inputConfirmaSenha" placeholder="Confirmar Senha">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputLink" class="col-sm-3 control-label">Link Social</label>
+									<div class="col-sm-9">
+										<div class="input-group">
+											<span class="input-group-addon">http://www.divulplace.com/</span>
+											<input id="inputLink" type="text" class="form-control" placeholder="link">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-offset-10 col-sm-2">
+										<button type="button" class="btn btn-block btn-primary">Salvar</button>
+									</div>
+								</div>
+							</div>
+						</form>
+						<!-- /.row -->
+					</div>
+				</div>
+				<!-- /.box -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="box box-info">
+					<div class="box-header with-border">
+						<h3 class="box-title">Endereço</h3>
+					</div>
+					<!-- /.box-header -->
+					<div class="box-body">
+						<form class="form-horizontal">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label for="inputEndereco" class="col-sm-2 control-label">Endereço</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="inputEndereco" placeholder="Endereço">
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<label for="inputNumero" class="col-sm-2 control-label">Número</label>
+									<div class="col-sm-3">
+										<input type="text" class="form-control" id="inputNumero" placeholder="Número">
+									</div>
+									<label for="inputComplemento" class="col-sm-3 control-label">Complemento</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="inputComplemento" placeholder="Complemento">
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<label for="inputCep" class="col-sm-2 control-label">CEP</label>
+									<div class="col-sm-3">
+										<input id="inputCep" type="text" class="form-control" data-inputmask='"mask": "99999-999"' data-mask>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<label for="inputBairro" class="col-sm-2 control-label">Bairro</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="inputBairro" placeholder="Bairro">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="selectPais" class="col-sm-2 control-label">País</label>
+									<div class="col-sm-10">
+										<select id="selectPais" class="form-control">
+											<option>Selecione...</option>
+											<option>Brasil</option>
+											<option>EUA</option>
+											<option>Canadá</option>
+											<option>Mexico</option>
+											<option>etc...</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="selectEstado" class="col-sm-2 control-label">Estado</label>
+									<div class="col-sm-10">
+										<select id="selectEstado" class="form-control">
+											<option>Selecione...</option>
+											<option>São Paulo</option>
+											<option>Rio de Janeiro</option>
+											<option>Minas Gerais</option>
+											<option>Espirito Santo</option>
+											<option>etc...</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="selectCidade" class="col-sm-2 control-label">Cidade</label>
+									<div class="col-sm-10">
+										<select id="selectCidade" class="form-control">
+											<option>Selecione...</option>
+											<option>São Paulo</option>
+											<option>São Bernardo</option>
+											<option>Santo Andre</option>
+											<option>São Caetano</option>
+											<option>etc...</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-offset-9 col-sm-3">
+										<button type="button" class="btn btn-block btn-primary">Salvar</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="box box-info">
+					<div class="box-header with-border">
+						<h3 class="box-title">Contatos</h3>
+					</div>
+					<!-- /.box-header -->
+					<div class="box-body">
+						<form class="form-horizontal">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label for="inputTelefone" class="col-sm-3 control-label">Telefone</label>
+									<div class="col-sm-6">
+										<div class="input-group">
+											<div class="input-group-addon">
+												<i class="fa fa-phone"></i>
+											</div>
+											<input id="inputTelefone" type="text" class="form-control" data-inputmask='"mask": "(999) 9999-9999"' data-mask>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputCel1" class="col-sm-3 control-label">Celular 1</label>
+									<div class="col-sm-6">
+										<div class="input-group">
+											<div class="input-group-addon">
+												<i class="fa fa-mobile"></i>
+											</div>
+											<input id="inputCel1" type="text" class="form-control" data-inputmask='"mask": "(999) 9999-9999"' data-mask>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<label>
+										  <input type="checkbox" class="minimal">
+										  WhatsApp
+										</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputCel2" class="col-sm-3 control-label">Celular 2</label>
+									<div class="col-sm-6">
+										<div class="input-group">
+											<div class="input-group-addon">
+												<i class="fa fa-mobile"></i>
+											</div>
+											<input id="inputCel2" type="text" class="form-control" data-inputmask='"mask": "(999) 9999-9999"' data-mask>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<label>
+										  <input type="checkbox" class="minimal">
+										  WhatsApp
+										</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputSkype" class="col-sm-3 control-label">Skype</label>
+									<div class="col-sm-9">
+										<div class="input-group">
+											<div class="input-group-addon">
+												<i class="fa fa-skype"></i>
+											</div>
+											<input type="text" class="form-control" id="inputSkype" placeholder="Skype">
+										</div>
+									</div>
+								</div>
+								
+								<fieldset>
+									<legend><h4>Sites/Redes Sociais</h4></legend>
+								</fieldset>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<div class="input-group">
+											<div class="input-group-btn">
+												<button id="idBtnTipo" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+													<span id="mediaSelecioando" class=""></span>
+													<span id="nomeTipo" style="margin-right: 5px;">Tipo</span>
+													<span class="fa fa-caret-down"></span>
+												</button>
+												<ul class="dropdown-menu">
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-github"></span>GitHub</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-pinterest"></span>Pinterest</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-vimeo"></span>Vimeo</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-youtube"></span>YouTube</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-linkedin"></span>LinkedIn</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-twitter"></span>Twitter</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-google-plus"></span>Google+</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-tumblr"></span>Tumblr</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-facebook"></span>FaceBook</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-flickr"></span>Flickr</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-dropbox"></span>DropBox</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-digg"></span>Digg</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-reddit"></span>Reddit</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-stack-overflow"></span>Stack Overflow</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-behance"></span>Behance</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-dribbble"></span>Dribble</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-instagram"></span>Instagram</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-vk"></span>VK</a></li>
+													<li class="divider"></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-link"></span>Outros</a></li>
+												</ul>
+											</div>
+											<input type="text" class="form-control">
+											<span class="input-group-btn">
+											  <button type="button" class="btn btn-success btn-flat"><i class="fa fa-plus"></i></button>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<div class="input-group">
+											<div class="input-group-btn">
+												<button type="button" class="btn btn-success"><span class="fa fa-facebook"></span></button>
+											</div>
+											<input type="text" value="http://www.facebook.com/nomeusuario" class="form-control">
+											<span class="input-group-btn">
+											  <button type="button" class="btn btn-warning btn-flat"><i class="fa fa-minus"></i></button>
+											</span>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="input-group">
+											<div class="input-group-btn">
+												<button type="button" class="btn btn-success"><span class="fa fa-linkedin"></span></button>
+											</div>
+											<input type="text" value="http://www.linkedin.com/in/nomeusuario" class="form-control">
+											<span class="input-group-btn">
+											  <button type="button" class="btn btn-warning btn-flat"><i class="fa fa-minus"></i></button>
+											</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<div class="col-md-offset-9 col-sm-3">
+										<button type="button" class="btn btn-block btn-primary">Salvar</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+      <!--------------------------
+        | Your Page Content Here |
+        -------------------------->
+	</section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+	<div class="text-center">
+		<ul class="list-inline social-buttons">
+			<li><a href="#"><i class="fa fa-twitter"></i></a>
+			</li>
+			<li><a href="#"><i class="fa fa-facebook"></i></a>
+			</li>
+			<li><a href="#"><i class="fa fa-linkedin"></i></a>
+			</li>
+			<li><a href="#"><i class="fa fa-google-plus"></i></a>
+			</li>
+			<li><a href="#"><i class="fa fa-youtube"></i></a>
+			</li>
+			<li><a href="#"><i class="fa fa-pinterest-p"></i></a>
+			</li>
+		</ul>
+	</div>
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 1.0.0
+    </div>
+    <!-- Default to the left -->
+    <strong>&copy; 2017 <a href="#">DivulPlace</a>.</strong> Todos os direitos reservados.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 3 -->
+<script src="../components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../js/dashboard.js"></script>
+<!-- ChartJS -->
+<script src="../components/Chart.js/Chart.js"></script>
+<!-- jQuery Knob -->
+<script src="../components/jquery-knob/js/jquery.knob.js"></script>
+<!-- InputMask -->
+<script src="../plugins/input-mask/jquery.inputmask.js"></script>
+<script src="../plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="../plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<!-- iCheck 1.0.1 -->
+<script src="../plugins/iCheck/icheck.min.js"></script>
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
+<script>
+ $(function () {
+	/* jQueryKnob */
+
+    $(".knob").knob({
+      /*change : function (value) {
+       //console.log("change : " + value);
+       },
+       release : function (value) {
+       console.log("release : " + value);
+       },
+       cancel : function () {
+       console.log("cancel : " + this.value);
+       },*/
+      draw: function () {
+
+        // "tron" case
+        if (this.$.data('skin') == 'tron') {
+
+          var a = this.angle(this.cv)  // Angle
+              , sa = this.startAngle          // Previous start angle
+              , sat = this.startAngle         // Start angle
+              , ea                            // Previous end angle
+              , eat = sat + a                 // End angle
+              , r = true;
+
+          this.g.lineWidth = this.lineWidth;
+
+          this.o.cursor
+          && (sat = eat - 0.3)
+          && (eat = eat + 0.3);
+
+          if (this.o.displayPrevious) {
+            ea = this.startAngle + this.angle(this.value);
+            this.o.cursor
+            && (sa = ea - 0.3)
+            && (ea = ea + 0.3);
+            this.g.beginPath();
+            this.g.strokeStyle = this.previousColor;
+            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
+            this.g.stroke();
+          }
+
+          this.g.beginPath();
+          this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
+          this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
+          this.g.stroke();
+
+          this.g.lineWidth = 2;
+          this.g.beginPath();
+          this.g.strokeStyle = this.o.fgColor;
+          this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+          this.g.stroke();
+
+          return false;
+        }
+      }
+    });
+	/* END JQUERY KNOB */
+	
+	$('[data-mask]').inputmask();
+	
+	 //iCheck for checkbox and radio inputs
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+      checkboxClass: 'icheckbox_minimal-blue',
+      radioClass   : 'iradio_minimal-blue'
+    })
+	
+	
+ });
+	function changeTipo(obj){
+		var faicon = $(obj).children('span').attr('class');
+		$('#mediaSelecioando').attr('class',' ');
+		$('#mediaSelecioando').addClass(faicon);
+		$('#nomeTipo').html('');
+	}
+</script>
+</body>
+</html>
+</html>
