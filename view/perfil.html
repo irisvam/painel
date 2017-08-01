@@ -468,6 +468,12 @@ desired effect
 									</div>
 									<p class="help-block"></p>
 								</div>
+								<div class="form-group">
+									<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-default">
+										<i class="fa fa-lock"></i>
+										Mudar Senha
+									</button>
+								</div>
 							</div>
 							<!-- /.col -->
 							<div class="col-md-9">
@@ -553,33 +559,6 @@ desired effect
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="inputSenha" class="col-sm-3 control-label">Senha</label>
-									<div class="col-sm-4">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-											<input type="password" class="form-control" id="inputSenha" placeholder="Senha">
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputNovaSenha" class="col-sm-3 control-label">Nova Senha</label>
-									<div class="col-sm-4">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-											<input type="password" class="form-control" id="inputNovaSenha" placeholder="Nova Senha">
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputConfirmaSenha" class="col-sm-3 control-label">Confirmar Senha</label>
-									<div class="col-sm-4">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-											<input type="password" class="form-control" id="inputConfirmaSenha" placeholder="Confirmar Senha">
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
 									<label for="inputLink" class="col-sm-3 control-label">Link Social</label>
 									<div class="col-sm-9">
 										<div class="input-group">
@@ -601,6 +580,56 @@ desired effect
 				<!-- /.box -->
 			</div>
 		</div>
+		
+		<div class="modal fade" id="modal-default">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Mudança de Senha</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+					<div class="form-group">
+						<label for="inputSenha" class="col-sm-3 control-label">Senha</label>
+						<div class="col-sm-6">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+								<input type="password" class="form-control" id="inputSenha" placeholder="Senha Atual">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputNovaSenha" class="col-sm-3 control-label">Nova Senha</label>
+						<div class="col-sm-6">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+								<input type="password" class="form-control" id="inputNovaSenha" placeholder="Nova Senha">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputConfirmaSenha" class="col-sm-3 control-label">Confirmar Senha</label>
+						<div class="col-sm-6">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+								<input type="password" class="form-control" id="inputConfirmaSenha" placeholder="Confirmar Senha">
+							</div>
+						</div>
+					</div>
+				</form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Confirmar Mudança</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+		
 		<div class="row">
 			<div class="col-md-6">
 				<div class="box box-info">
