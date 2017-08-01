@@ -4532,7 +4532,7 @@ table.text-center th {
 .bg-aqua-active,
 .modal-info .modal-header,
 .modal-info .modal-footer {
-  background-color: #00a7d0 !important;
+  background-color: #127dac  !important;
 }
 .bg-blue-active {
   background-color: #005384 !important;
@@ -5020,6 +5020,6 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #5bc0de;
+  background-color: #344869;
   color: #fff;
 }
