@@ -373,7 +373,7 @@ desired effect
 		<li><a href="#"><i class="fa fa-address-book-o"></i> <span>Portifólio</span></a></li>
 		<li><a href="#"><i class="fa fa-files-o"></i> <span>Folder/Flyer</span></a></li>
 		<li><a href="#"><i class="fa fa-id-card-o"></i> <span>Cartão de Visitas</span></a></li>
-		<li><a href="#"><i class="fa fa-caret-square-o-right""></i> <span>Vídeos</span></a></li>
+		<li><a href="videos.html"><i class="fa fa-caret-square-o-right"></i> <span>Vídeos</span></a></li>
 		<li class="header">FINCANCEIRO</li>
 		<li><a href="#"><i class="fa fa-shopping-cart"></i> <span>Mensalidade</span></a></li>
 		<li><a href="#"><i class="fa fa-money"></i> <span>Monetização</span></a></li>
@@ -642,14 +642,18 @@ desired effect
 				<div class="box-body">
 					<div class="row">
 						<div class="col-md-6">
-							<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
+							<a href="#" data-toggle="modal" data-target="#modal-default">
+								<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
+							</a>
 							<dl>
 								<dt>Vídeo 01</dt>
 								<dd>Descrição para o vídeo 01</dd>
 							</dl>
 						</div>
 						<div class="col-md-6">
-							<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 02">
+							<a href="#" data-toggle="modal" data-target="#modal-default">
+								<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
+							</a>
 							<dl>
 								<dt>Vídeo 02</dt>
 								<dd>Descrição para o vídeo 02</dd>
@@ -847,7 +851,7 @@ desired effect
 					</div>
 				</div>
 				<div class="box-footer no-padding">
-					<button type="button" class="btn btn-success btn-block btn-sm">Ver todas</button>
+					<a href="mensagens.html" class="btn btn-success btn-block btn-sm">Ver todas</a>
 				</div>
 			</div>
 		</div>
@@ -936,6 +940,26 @@ desired effect
 			</div>
 		</div>
 	</div>
+	
+		<div class="modal fade" id="modal-default">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Título Vídeo</h4>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive" src="../img/750x450.png" alt="Vídeo 02">
+              </div>
+              <div class="modal-footer">
+				<p>Uma breve descrição se preciso!</p>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
       <!--------------------------
         | Your Page Content Here |
         -------------------------->

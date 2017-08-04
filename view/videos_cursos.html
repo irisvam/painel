@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>DivulPlace | Perfil </title>
+  <title>DivulPlace | Vídeos | Cursos </title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="../components/bootstrap/dist/css/bootstrap.min.css">
@@ -15,10 +15,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="../components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="../components/Ionicons/css/ionicons.min.css">
-  <!-- bootstrap datepicker -->
-  <link rel="stylesheet" href="../components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-  <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="../plugins/iCheck/all.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../css/dashboard.css">
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
@@ -372,12 +368,12 @@ desired effect
         <!-- Optionally, you can add icons to the links -->
         <li><a href="index.html"><i class="fa fa-home"></i> <span>Início</span></a></li>
         <li><a href="painel.html"><i class="fa fa-dashboard"></i> <span>Painel de Controle</span></a></li>
-		<li class="active"><a href="#"><i class="fa fa-user-circle"></i> <span>Perfil</span></a></li>
+		<li><a href="perfil.html"><i class="fa fa-user-circle"></i> <span>Perfil</span></a></li>
 		<li class="header">SERVIÇOS</li>
 		<li><a href="#"><i class="fa fa-address-book-o"></i> <span>Portifólio</span></a></li>
 		<li><a href="#"><i class="fa fa-files-o"></i> <span>Folder/Flyer</span></a></li>
 		<li><a href="#"><i class="fa fa-id-card-o"></i> <span>Cartão de Visitas</span></a></li>
-		<li><a href="videos.html"><i class="fa fa-caret-square-o-right"></i> <span>Vídeos</span></a></li>
+		<li class="active"><a href="videos.html"><i class="fa fa-caret-square-o-right"></i> <span>Vídeos</span></a></li>
 		<li class="header">FINCANCEIRO</li>
 		<li><a href="#"><i class="fa fa-shopping-cart"></i> <span>Mensalidade</span></a></li>
 		<li><a href="#"><i class="fa fa-money"></i> <span>Monetização</span></a></li>
@@ -429,13 +425,14 @@ desired effect
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Perfil
-        <small>Atualize suas informações pessoais!</small>
+         Cursos
+        <small>Vários cursos interessantes!</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="index.html"><i class="fa fa-home"></i> Início</a></li>
 		<li><a href="painel.html">Painel de Controle</a></li>
-        <li class="active">Perfil</li>
+		<li><a href="videos.html">Vídeos</a></li>
+        <li class="active">Cursos</li>
       </ol>
     </section>
 
@@ -443,141 +440,165 @@ desired effect
     <section class="content container-fluid">
 		<!-- /.row -->
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-8">
 				<div class="box box-info">
 					<div class="box-header with-border">
-						<h3 class="box-title">Dados Pessoais</h3>
+						<h3 class="box-title">Cursos</h3>
+						<div class="box-tools pull-right">
+							<div class="has-feedback">
+								<input type="text" class="form-control input-sm" placeholder="Procurar curso">
+								<span class="glyphicon glyphicon-search form-control-feedback"></span>
+							</div>
+						</div>
+						<!-- /.box-tools -->
 					</div>
 					<!-- /.box-header -->
 					<div class="box-body">
-						<form class="form-horizontal">
-							<div class="col-md-3 text-center">
-								<div class="form-group">
-									<div class="col-md-12">
-										<div class="form-group">
-										</div>
-										<div class="form-group">
-											<img class="img-circle" src="../img/user.png" alt="Usuário">
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="btn btn-default btn-file">
-										<i class="fa fa-picture-o"></i> Trocar Imagem
-										<input type="file" name="attachment">
-									</div>
-									<p class="help-block"></p>
-								</div>
-								<div class="form-group">
-									<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-default">
-										<i class="fa fa-lock"></i>
-										Mudar Senha
-									</button>
-								</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="#" data-toggle="modal" data-target="#modal-default">
+									<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
+								</a>
 							</div>
-							<!-- /.col -->
-							<div class="col-md-9">
-								<div class="form-group">
-									<label for="outputId" class="col-sm-6 control-label">Seu ID:</label>
-									<div class="col-sm-4">
-										<label class="control-label">____________________________</label>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputTratamento" class="col-sm-3 control-label">Tratamento</label>
-									<div class="col-sm-6">
-										<input type="text" class="form-control" id="inputTratamento" placeholder="Sr., Sra., V.Exa, V.Maga, etc">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputNome" class="col-sm-3 control-label">Nome</label>
-									<div class="col-sm-9">
-										<input type="text" class="form-control" id="inputNome" placeholder="Nome">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputApelido" class="col-sm-3 control-label">Apelido</label>
-									<div class="col-sm-6">
-										<input type="text" class="form-control" id="inputApelido" placeholder="Apelido">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputCpf" class="col-sm-3 control-label">CPF</label>
-									<div class="col-sm-4">
-										<input id="inputCpf" type="text" class="form-control" data-inputmask='"mask": "999.999.999-99"' data-mask>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputNascimento" class="col-sm-3 control-label">Data de Nascimento</label>
-									<div class="col-sm-4">
-										<div class="input-group">
-											<div class="input-group-addon">
-												<i class="fa fa-calendar"></i>
-											</div>
-											<input id="inputNascimento" type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="">
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="selectCivil" class="col-sm-3 control-label">Estado Civil</label>
-									<div class="col-sm-6">
-										<select id="selectCivil" class="form-control">
-											<option>Selecione...</option>
-											<option>Solteiro</option>
-											<option>Casado</option>
-											<option>Relacionamento Estável</option>
-											<option>etc...</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="radioSexo" class="col-sm-3 control-label">Sexo</label>
-									<div class="col-sm-9">
-										<label>
-										  <input type="radio" name="r1" class="minimal" checked>
-										  Masculino
-										</label>
-										<label>
-										  <input type="radio" name="r1" class="minimal">
-										  Feminino
-										</label>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="areaSobre" class="col-sm-3 control-label">Sobre</label>
-									<div class="col-sm-6">
-										<textarea id="Sobre" class="form-control" rows="3" placeholder="Sobre ..."></textarea>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputEmail" class="col-sm-3 control-label">E-mail</label>
-									<div class="col-sm-9">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-											<input id="inputEmail" type="email" class="form-control" placeholder="E-mail">
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputLink" class="col-sm-3 control-label">Link Social</label>
-									<div class="col-sm-9">
-										<div class="input-group">
-											<span class="input-group-addon">http://www.divulplace.com/</span>
-											<input id="inputLink" type="text" class="form-control" placeholder="link">
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-md-offset-10 col-sm-2">
-										<button type="button" class="btn btn-block btn-primary">Salvar</button>
-									</div>
-								</div>
+							<div class="col-sm-8">
+								<span class="description pull-right">23 Jan 2017</span>
+								<dl>
+									<dt>Vídeo 01</dt>
+								</dl>
+								<p>Far far away, behind the word mountains, far from the
+								countries Vokalia and Consonantia, there live the blind
+								texts. Separated they live in Bookmarksgrove right at</p>
 							</div>
-						</form>
-						<!-- /.row -->
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="#" data-toggle="modal" data-target="#modal-default">
+									<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
+								</a>
+							</div>
+							<div class="col-sm-8">
+								<span class="description pull-right">23 Jan 2017</span>
+								<dl>
+									<dt>Vídeo 02</dt>
+								</dl>
+								<p>Far far away, behind the word mountains, far from the
+								countries Vokalia and Consonantia, there live the blind
+								texts. Separated they live in Bookmarksgrove right at</p>
+							</div>
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="#" data-toggle="modal" data-target="#modal-default">
+									<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
+								</a>
+							</div>
+							<div class="col-sm-8">
+								<span class="description pull-right">23 Jan 2017</span>
+								<dl>
+									<dt>Vídeo 03</dt>
+								</dl>
+								<p>Far far away, behind the word mountains, far from the
+								countries Vokalia and Consonantia, there live the blind
+								texts. Separated they live in Bookmarksgrove right at</p>
+							</div>
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="#" data-toggle="modal" data-target="#modal-default">
+									<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
+								</a>
+							</div>
+							<div class="col-sm-8">
+								<span class="description pull-right">23 Jan 2017</span>
+								<dl>
+									<dt>Vídeo 04</dt>
+								</dl>
+								<p>Far far away, behind the word mountains, far from the
+								countries Vokalia and Consonantia, there live the blind
+								texts. Separated they live in Bookmarksgrove right at</p>
+							</div>
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="#" data-toggle="modal" data-target="#modal-default">
+									<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
+								</a>
+							</div>
+							<div class="col-sm-8">
+								<span class="description pull-right">23 Jan 2017</span>
+								<dl>
+									<dt>Vídeo 05</dt>
+								</dl>
+								<p>Far far away, behind the word mountains, far from the
+								countries Vokalia and Consonantia, there live the blind
+								texts. Separated they live in Bookmarksgrove right at</p>
+							</div>
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="#" data-toggle="modal" data-target="#modal-default">
+									<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
+								</a>
+							</div>
+							<div class="col-sm-8">
+								<span class="description pull-right">23 Jan 2017</span>
+								<dl>
+									<dt>Vídeo 06</dt>
+								</dl>
+								<p>Far far away, behind the word mountains, far from the
+								countries Vokalia and Consonantia, there live the blind
+								texts. Separated they live in Bookmarksgrove right at</p>
+							</div>
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col-sm-4">
+								<a href="#" data-toggle="modal" data-target="#modal-default">
+									<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
+								</a>
+							</div>
+							<div class="col-sm-8">
+								<span class="description pull-right">23 Jan 2017</span>
+								<dl>
+									<dt>Vídeo 07</dt>
+								</dl>
+								<p>Far far away, behind the word mountains, far from the
+								countries Vokalia and Consonantia, there live the blind
+								texts. Separated they live in Bookmarksgrove right at</p>
+							</div>
+						</div>
+					</div>
+					<div class="box-footer no-padding text-center">
+						<a href="videos_cursos.html">mais...</a>
 					</div>
 				</div>
-				<!-- /.box -->
+			</div>
+			
+			<div class="col-md-3">
+				<fieldset>
+					<legend><h4>Propagandas</h4></legend>
+				</fieldset>
+				
+				<div class="form-group text-center">
+					<img class="attachment-img" src="../img/250x250.png" alt="Product Image">
+				</div>
+				
+				<div class="form-group text-center">
+					<img class="attachment-img" src="../img/250x500.png" alt="Product Image">
+				</div>
+				
+				<div class="form-group text-center">
+					<img class="attachment-img" src="../img/250x50.png" alt="Product Image">
+				</div>
+				
+				<div class="form-group text-center">
+					<img class="attachment-img" src="../img/250x50.png" alt="Product Image">
+				</div>
 			</div>
 		</div>
 		
@@ -587,42 +608,13 @@ desired effect
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Mudança de Senha</h4>
+                <h4 class="modal-title">Título Vídeo</h4>
               </div>
               <div class="modal-body">
-                <form class="form-horizontal">
-					<div class="form-group">
-						<label for="inputSenha" class="col-sm-3 control-label">Senha</label>
-						<div class="col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-								<input type="password" class="form-control" id="inputSenha" placeholder="Senha Atual">
-							</div>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="inputNovaSenha" class="col-sm-3 control-label">Nova Senha</label>
-						<div class="col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-								<input type="password" class="form-control" id="inputNovaSenha" placeholder="Nova Senha">
-							</div>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="inputConfirmaSenha" class="col-sm-3 control-label">Confirmar Senha</label>
-						<div class="col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-								<input type="password" class="form-control" id="inputConfirmaSenha" placeholder="Confirmar Senha">
-							</div>
-						</div>
-					</div>
-				</form>
+                <img class="img-responsive" src="../img/750x450.png" alt="Vídeo 02">
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Confirmar Mudança</button>
+				<p>Uma breve descrição se preciso!</p>
               </div>
             </div>
             <!-- /.modal-content -->
@@ -630,240 +622,6 @@ desired effect
           <!-- /.modal-dialog -->
         </div>
 		
-		<div class="row">
-			<div class="col-md-6">
-				<div class="box box-info">
-					<div class="box-header with-border">
-						<h3 class="box-title">Endereço</h3>
-					</div>
-					<!-- /.box-header -->
-					<div class="box-body">
-						<form class="form-horizontal">
-							<div class="col-sm-12">
-								<div class="form-group">
-									<label for="inputEndereco" class="col-sm-2 control-label">Endereço</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control" id="inputEndereco" placeholder="Endereço">
-									</div>
-								</div>
-								
-								<div class="form-group">
-									<label for="inputNumero" class="col-sm-2 control-label">Número</label>
-									<div class="col-sm-3">
-										<input type="text" class="form-control" id="inputNumero" placeholder="Número">
-									</div>
-									<label for="inputComplemento" class="col-sm-3 control-label">Complemento</label>
-									<div class="col-sm-4">
-										<input type="text" class="form-control" id="inputComplemento" placeholder="Complemento">
-									</div>
-								</div>
-								
-								<div class="form-group">
-									<label for="inputCep" class="col-sm-2 control-label">CEP</label>
-									<div class="col-sm-3">
-										<input id="inputCep" type="text" class="form-control" data-inputmask='"mask": "99999-999"' data-mask>
-									</div>
-								</div>
-								
-								<div class="form-group">
-									<label for="inputBairro" class="col-sm-2 control-label">Bairro</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control" id="inputBairro" placeholder="Bairro">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="selectPais" class="col-sm-2 control-label">País</label>
-									<div class="col-sm-10">
-										<select id="selectPais" class="form-control">
-											<option>Selecione...</option>
-											<option>Brasil</option>
-											<option>EUA</option>
-											<option>Canadá</option>
-											<option>Mexico</option>
-											<option>etc...</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="selectEstado" class="col-sm-2 control-label">Estado</label>
-									<div class="col-sm-10">
-										<select id="selectEstado" class="form-control">
-											<option>Selecione...</option>
-											<option>São Paulo</option>
-											<option>Rio de Janeiro</option>
-											<option>Minas Gerais</option>
-											<option>Espirito Santo</option>
-											<option>etc...</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="selectCidade" class="col-sm-2 control-label">Cidade</label>
-									<div class="col-sm-10">
-										<select id="selectCidade" class="form-control">
-											<option>Selecione...</option>
-											<option>São Paulo</option>
-											<option>São Bernardo</option>
-											<option>Santo Andre</option>
-											<option>São Caetano</option>
-											<option>etc...</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-md-offset-9 col-sm-3">
-										<button type="button" class="btn btn-block btn-primary">Salvar</button>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="box box-info">
-					<div class="box-header with-border">
-						<h3 class="box-title">Contatos</h3>
-					</div>
-					<!-- /.box-header -->
-					<div class="box-body">
-						<form class="form-horizontal">
-							<div class="col-sm-12">
-								<div class="form-group">
-									<label for="inputTelefone" class="col-sm-3 control-label">Telefone</label>
-									<div class="col-sm-6">
-										<div class="input-group">
-											<div class="input-group-addon">
-												<i class="fa fa-phone"></i>
-											</div>
-											<input id="inputTelefone" type="text" class="form-control" data-inputmask='"mask": "(999) 9999-9999"' data-mask>
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputCel1" class="col-sm-3 control-label">Celular 1</label>
-									<div class="col-sm-6">
-										<div class="input-group">
-											<div class="input-group-addon">
-												<i class="fa fa-mobile"></i>
-											</div>
-											<input id="inputCel1" type="text" class="form-control" data-inputmask='"mask": "(999) 9999-9999"' data-mask>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<label>
-										  <input type="checkbox" class="minimal">
-										  WhatsApp
-										</label>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputCel2" class="col-sm-3 control-label">Celular 2</label>
-									<div class="col-sm-6">
-										<div class="input-group">
-											<div class="input-group-addon">
-												<i class="fa fa-mobile"></i>
-											</div>
-											<input id="inputCel2" type="text" class="form-control" data-inputmask='"mask": "(999) 9999-9999"' data-mask>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<label>
-										  <input type="checkbox" class="minimal">
-										  WhatsApp
-										</label>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="inputSkype" class="col-sm-3 control-label">Skype</label>
-									<div class="col-sm-9">
-										<div class="input-group">
-											<div class="input-group-addon">
-												<i class="fa fa-skype"></i>
-											</div>
-											<input type="text" class="form-control" id="inputSkype" placeholder="Skype">
-										</div>
-									</div>
-								</div>
-								
-								<fieldset>
-									<legend><h4>Sites/Redes Sociais</h4></legend>
-								</fieldset>
-								<div class="form-group">
-									<div class="col-sm-12">
-										<div class="input-group">
-											<div class="input-group-btn">
-												<button id="idBtnTipo" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-													<span id="mediaSelecioando" class=""></span>
-													<span id="nomeTipo" style="margin-right: 5px;">Tipo</span>
-													<span class="fa fa-caret-down"></span>
-												</button>
-												<ul class="dropdown-menu">
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-github"></span>GitHub</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-pinterest"></span>Pinterest</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-vimeo"></span>Vimeo</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-youtube"></span>YouTube</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-linkedin"></span>LinkedIn</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-twitter"></span>Twitter</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-google-plus"></span>Google+</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-tumblr"></span>Tumblr</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-facebook"></span>FaceBook</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-flickr"></span>Flickr</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-dropbox"></span>DropBox</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-digg"></span>Digg</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-reddit"></span>Reddit</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-stack-overflow"></span>Stack Overflow</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-behance"></span>Behance</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-dribbble"></span>Dribble</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-instagram"></span>Instagram</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-vk"></span>VK</a></li>
-													<li class="divider"></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-link"></span>Outros</a></li>
-												</ul>
-											</div>
-											<input type="text" class="form-control">
-											<span class="input-group-btn">
-											  <button type="button" class="btn btn-success btn-flat"><i class="fa fa-plus"></i></button>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-12">
-									<div class="form-group">
-										<div class="input-group">
-											<div class="input-group-btn">
-												<button type="button" class="btn btn-success"><span class="fa fa-facebook"></span></button>
-											</div>
-											<input type="text" value="http://www.facebook.com/nomeusuario" class="form-control">
-											<span class="input-group-btn">
-											  <button type="button" class="btn btn-warning btn-flat"><i class="fa fa-minus"></i></button>
-											</span>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="input-group">
-											<div class="input-group-btn">
-												<button type="button" class="btn btn-success"><span class="fa fa-linkedin"></span></button>
-											</div>
-											<input type="text" value="http://www.linkedin.com/in/nomeusuario" class="form-control">
-											<span class="input-group-btn">
-											  <button type="button" class="btn btn-warning btn-flat"><i class="fa fa-minus"></i></button>
-											</span>
-										</div>
-									</div>
-								</div>
-								
-								<div class="form-group">
-									<div class="col-md-offset-9 col-sm-3">
-										<button type="button" class="btn btn-block btn-primary">Salvar</button>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
@@ -874,7 +632,6 @@ desired effect
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <!-- To the right -->
 	<div class="text-center">
 		<ul class="list-inline social-buttons">
 			<li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -891,6 +648,7 @@ desired effect
 			</li>
 		</ul>
 	</div>
+    <!-- To the right -->
     <div class="pull-right hidden-xs">
       <b>Version</b> 1.0.0
     </div>
@@ -912,15 +670,6 @@ desired effect
 <script src="../components/chart.js/Chart.js"></script>
 <!-- jQuery Knob -->
 <script src="../components/jquery-knob/js/jquery.knob.js"></script>
-<!-- InputMask -->
-<script src="../plugins/input-mask/jquery.inputmask.js"></script>
-<script src="../plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
-<script src="../plugins/input-mask/jquery.inputmask.extensions.js"></script>
-<!-- iCheck 1.0.1 -->
-<script src="../plugins/iCheck/icheck.min.js"></script>
-<!-- Optionally, you can add Slimscroll and FastClick plugins.
-     Both of these plugins are recommended to enhance the
-     user experience. -->
 <script>
  $(function () {
 	/* jQueryKnob */
@@ -981,22 +730,7 @@ desired effect
     });
 	/* END JQUERY KNOB */
 	
-	$('[data-mask]').inputmask();
-	
-	 //iCheck for checkbox and radio inputs
-    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
-      checkboxClass: 'icheckbox_minimal-blue',
-      radioClass   : 'iradio_minimal-blue'
-    })
-	
-	
  });
-	function changeTipo(obj){
-		var faicon = $(obj).children('span').attr('class');
-		$('#mediaSelecioando').attr('class',' ');
-		$('#mediaSelecioando').addClass(faicon);
-		$('#nomeTipo').html('');
-	}
 </script>
 </body>
 </html>
