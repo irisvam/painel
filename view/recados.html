@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>DivulPlace | Vídeos | Cursos </title>
+  <title>DivulPlace | Recados </title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="../components/bootstrap/dist/css/bootstrap.min.css">
@@ -15,6 +15,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="../components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="../components/Ionicons/css/ionicons.min.css">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="../components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="../plugins/iCheck/all.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../css/dashboard.css">
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
@@ -228,7 +232,7 @@ desired effect
                 </ul>
                 <!-- /.menu -->
               </li>
-              <li class="footer"><a href="recados.html">Ver todas</a></li>
+              <li class="footer"><a href="#">Ver todas</a></li>
             </ul>
           </li>
 
@@ -381,13 +385,13 @@ desired effect
 		<li><a href="#"><i class="fa fa-address-book-o"></i> <span>Portifólio</span></a></li>
 		<li><a href="#"><i class="fa fa-files-o"></i> <span>Folder/Flyer</span></a></li>
 		<li><a href="#"><i class="fa fa-id-card-o"></i> <span>Cartão de Visitas</span></a></li>
-		<li class="active"><a href="videos.html"><i class="fa fa-caret-square-o-right"></i> <span>Vídeos</span></a></li>
+		<li><a href="videos.html"><i class="fa fa-caret-square-o-right"></i> <span>Vídeos</span></a></li>
 		<li class="header">FINCANCEIRO</li>
 		<li><a href="#"><i class="fa fa-shopping-cart"></i> <span>Mensalidade</span></a></li>
 		<li><a href="monetizacao.html"><i class="fa fa-money"></i> <span>Monetização</span></a></li>
 		<li><a href="conta_bancaria.html"><i class="fa fa-bank"></i> <span>Conta</span></a></li>
 		<li class="header">CORRESPONDÊNCIA</li>
-		<li>
+		<li class="active">
 			<a href="mensagens.html">
 				<i class="fa fa-envelope-o"></i>
 				<span>Mensagens</span>
@@ -397,7 +401,7 @@ desired effect
 			</a>
 		</li>
 		<li>
-			<a href="recados.html">
+			<a href="#">
 				<i class="fa fa-paper-plane-o"></i> 
 				<span>Recados</span>
 				<span class="pull-right-container">
@@ -433,14 +437,13 @@ desired effect
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-         Cursos
-        <small>Vários cursos interessantes!</small>
+        Recados
+        <small>Recebendo informações dos usuários que viram seu Portifólio!</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="index.html"><i class="fa fa-home"></i> Início</a></li>
 		<li><a href="painel.html">Painel de Controle</a></li>
-		<li><a href="videos.html">Vídeos</a></li>
-        <li class="active">Cursos</li>
+        <li class="active">Recados</li>
       </ol>
     </section>
 
@@ -448,188 +451,160 @@ desired effect
     <section class="content container-fluid">
 		<!-- /.row -->
 		<div class="row">
-			<div class="col-md-8">
-				<div class="box box-info">
+			<div class="col-md-4">
+				<div id="iDlstContatos" class="box box-warning">
 					<div class="box-header with-border">
-						<h3 class="box-title">Cursos</h3>
-						<div class="box-tools pull-right">
-							<div class="has-feedback">
-								<input type="text" class="form-control input-sm" placeholder="Procurar curso">
-								<span class="glyphicon glyphicon-search form-control-feedback"></span>
+						<div class="input-group">
+							<span class="input-group-btn">
+								<a href="#" class="btn btn-warning btn-flat btn-contatos" alt="Usuários" title="Usuários" data-widget="collapse">
+									<i class="fa fa-user"></i>
+								</a>
+							</span>
+							<input type="text" name="q" class="form-control" placeholder="Procurar...">
+							<span class="input-group-btn">
+								<button type="submit" name="search" id="search-btn" class="btn btn-primary btn-flat">
+									<i class="fa fa-search"></i>
+								</button>
+							</span>
+						</div>
+					</div>
+					<!-- /.box-header -->
+					<div class="box-body box-contatos">
+						<div class="direct-chat-messages">
+							<div class="post no-padding">
+								<div class="direct-chat-msg">
+									<div class="pull-right">
+										<i class="fa fa-circle-o text-yellow"></i>
+									</div>
+									<span class="username"><a href="#">Maria Gonzales</a></span>
+									<div class="time-recado">
+										<span class="text-muted pull-right"> 15 Feb 10:30 AM</span>
+									</div>
+								</div>
+							</div>
+							<div class="post no-padding">
+								<div class="direct-chat-msg">
+									<div class="pull-right">
+										<i class="fa fa-check-circle-o text-green"></i>
+									</div>
+									<span class="username"><a href="#">Luna Stark</a></span>
+									<div class="time-recado">
+										<span class="text-muted pull-right"> 15 Feb 10:30 AM</span>
+									</div>
+								</div>
+							</div>
+							<div class="post no-padding">
+								<div class="direct-chat-msg">
+									<div class="pull-right">
+										<i class="fa fa-check-circle-o text-green"></i>
+									</div>
+									<span class="username"><a href="#">Nora Havisham</a></span>
+									<div class="time-recado">
+										<span class="text-muted pull-right"> 15 Feb 10:30 AM</span>
+									</div>
+								</div>
+							</div>
+							<div class="post no-padding">
+								<div class="direct-chat-msg">
+									<div class="pull-right">
+										<i class="fa fa-circle-o text-yellow"></i>
+									</div>
+									<span class="username"><a href="#">Filipe</a></span>
+									<div class="time-recado">
+										<span class="text-muted pull-right"> 15 Feb 10:30 AM</span>
+									</div>
+								</div>
+							</div>
+							<div class="post no-padding">
+								<div class="direct-chat-msg">
+									<div class="pull-right">
+										<i class="fa fa-check-circle-o text-green"></i>
+									</div>
+									<span class="username"><a href="#">Amanda Jucker</a></span>
+									<div class="time-recado">
+										<span class="text-muted pull-right"> 15 Feb 10:30 AM</span>
+									</div>
+								</div>
+							</div>
+							<div class="post no-padding">
+								<div class="direct-chat-msg">
+									<div class="pull-right">
+										<i class="fa fa-check-circle-o text-green"></i>
+									</div>
+									<span class="username"><a href="#">Patricia Maia</a></span>
+									<div class="time-recado">
+										<span class="text-muted pull-right"> 15 Feb 10:30 AM</span>
+									</div>
+								</div>
+							</div>
+							<div class="post no-padding">
+								<div class="direct-chat-msg">
+									<div class="pull-right">
+										<i class="fa fa-check-circle-o text-green"></i>
+									</div>
+									<span class="username"><a href="#">Aldebaran Taurus</a></span>
+									<div class="time-recado">
+										<span class="text-muted pull-right"> 15 Feb 10:30 AM</span>
+									</div>
+								</div>
+							</div>
+							<div class="post no-padding">
+								<div class="direct-chat-msg">
+									<div class="pull-right">
+										<i class="fa fa-check-circle-o text-green"></i>
+									</div>
+									<span class="username"><a href="#">Feliciano Jorge</a></span>
+									<div class="time-recado">
+										<span class="text-muted pull-right"> 15 Feb 10:30 AM</span>
+									</div>
+								</div>
+							</div>
+							<div class="post no-padding">
+								<div class="direct-chat-msg">
+									<div class="pull-right">
+										<i class="fa fa-check-circle-o text-green"></i>
+									</div>
+									<span class="username"><a href="#">Carlos Fernando Veiga</a></span>
+									<div class="time-recado">
+										<span class="text-muted pull-right"> 15 Feb 11:03 PM</span>
+									</div>
+								</div>
 							</div>
 						</div>
-						<!-- /.box-tools -->
+					</div>
+				</div>
+				<!-- /.box -->
+			</div>
+			<div class="col-md-8">
+				<div class="box box-warning">
+					<div class="box-header with-border">
+						<h3 class="box-title">Recados</h3>
+						<div class="box-tools pull-right">
+							<a href="#" class="btn btn-box-tool" data-toggle="tooltip" title="" data-original-title="Previous"><i class="fa fa-chevron-left"></i></a>
+							<a href="#" class="btn btn-box-tool" data-toggle="tooltip" title="" data-original-title="Next"><i class="fa fa-chevron-right"></i></a>
+						</div>
 					</div>
 					<!-- /.box-header -->
 					<div class="box-body">
-						<div class="row">
-							<div class="col-sm-4">
-								<a href="#" data-toggle="modal" data-target="#modal-default">
-									<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
-								</a>
-							</div>
-							<div class="col-sm-8">
-								<span class="description pull-right">23 Jan 2017</span>
-								<dl>
-									<dt>Vídeo 01</dt>
-								</dl>
-								<p>Far far away, behind the word mountains, far from the
-								countries Vokalia and Consonantia, there live the blind
-								texts. Separated they live in Bookmarksgrove right at</p>
-							</div>
+						<div class="mailbox-read-info">
+							<h3>Maria Gonzales</h3>
+							<h5>De: mariagonzales@example.com </h5>
 						</div>
-						<hr />
-						<div class="row">
-							<div class="col-sm-4">
-								<a href="#" data-toggle="modal" data-target="#modal-default">
-									<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
-								</a>
-							</div>
-							<div class="col-sm-8">
-								<span class="description pull-right">23 Jan 2017</span>
-								<dl>
-									<dt>Vídeo 02</dt>
-								</dl>
-								<p>Far far away, behind the word mountains, far from the
-								countries Vokalia and Consonantia, there live the blind
-								texts. Separated they live in Bookmarksgrove right at</p>
-							</div>
-						</div>
-						<hr />
-						<div class="row">
-							<div class="col-sm-4">
-								<a href="#" data-toggle="modal" data-target="#modal-default">
-									<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
-								</a>
-							</div>
-							<div class="col-sm-8">
-								<span class="description pull-right">23 Jan 2017</span>
-								<dl>
-									<dt>Vídeo 03</dt>
-								</dl>
-								<p>Far far away, behind the word mountains, far from the
-								countries Vokalia and Consonantia, there live the blind
-								texts. Separated they live in Bookmarksgrove right at</p>
-							</div>
-						</div>
-						<hr />
-						<div class="row">
-							<div class="col-sm-4">
-								<a href="#" data-toggle="modal" data-target="#modal-default">
-									<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
-								</a>
-							</div>
-							<div class="col-sm-8">
-								<span class="description pull-right">23 Jan 2017</span>
-								<dl>
-									<dt>Vídeo 04</dt>
-								</dl>
-								<p>Far far away, behind the word mountains, far from the
-								countries Vokalia and Consonantia, there live the blind
-								texts. Separated they live in Bookmarksgrove right at</p>
-							</div>
-						</div>
-						<hr />
-						<div class="row">
-							<div class="col-sm-4">
-								<a href="#" data-toggle="modal" data-target="#modal-default">
-									<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
-								</a>
-							</div>
-							<div class="col-sm-8">
-								<span class="description pull-right">23 Jan 2017</span>
-								<dl>
-									<dt>Vídeo 05</dt>
-								</dl>
-								<p>Far far away, behind the word mountains, far from the
-								countries Vokalia and Consonantia, there live the blind
-								texts. Separated they live in Bookmarksgrove right at</p>
-							</div>
-						</div>
-						<hr />
-						<div class="row">
-							<div class="col-sm-4">
-								<a href="#" data-toggle="modal" data-target="#modal-default">
-									<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
-								</a>
-							</div>
-							<div class="col-sm-8">
-								<span class="description pull-right">23 Jan 2017</span>
-								<dl>
-									<dt>Vídeo 06</dt>
-								</dl>
-								<p>Far far away, behind the word mountains, far from the
-								countries Vokalia and Consonantia, there live the blind
-								texts. Separated they live in Bookmarksgrove right at</p>
-							</div>
-						</div>
-						<hr />
-						<div class="row">
-							<div class="col-sm-4">
-								<a href="#" data-toggle="modal" data-target="#modal-default">
-									<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
-								</a>
-							</div>
-							<div class="col-sm-8">
-								<span class="description pull-right">23 Jan 2017</span>
-								<dl>
-									<dt>Vídeo 07</dt>
-								</dl>
-								<p>Far far away, behind the word mountains, far from the
-								countries Vokalia and Consonantia, there live the blind
-								texts. Separated they live in Bookmarksgrove right at</p>
-							</div>
+						<div class="mailbox-read-message">
+							<p>Boa tarde,</p>
+							<p>Gostaria de saber como funciona essa parte de Portifólio Digital. O meu vizinho trabalha com vendas diretas e 
+							ele me passou o seu link.</p>
+							<p>Obrigado.</p>
+							<p>Maria.</p>
 						</div>
 					</div>
-					<div class="box-footer no-padding text-center">
-						<a href="videos_cursos.html">mais...</a>
+					<div class="box-footer text-center">
+						<span class="text-muted"> 15 Feb 10:30 AM</span>
 					</div>
 				</div>
-			</div>
-			
-			<div class="col-md-3">
-				<fieldset>
-					<legend><h4>Propagandas</h4></legend>
-				</fieldset>
-				
-				<div class="form-group text-center">
-					<img class="attachment-img" src="../img/250x250.png" alt="Product Image">
-				</div>
-				
-				<div class="form-group text-center">
-					<img class="attachment-img" src="../img/250x500.png" alt="Product Image">
-				</div>
-				
-				<div class="form-group text-center">
-					<img class="attachment-img" src="../img/250x50.png" alt="Product Image">
-				</div>
-				
-				<div class="form-group text-center">
-					<img class="attachment-img" src="../img/250x50.png" alt="Product Image">
-				</div>
+				<!-- /.box -->
 			</div>
 		</div>
-		
-		<div class="modal fade" id="modal-default">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Título Vídeo</h4>
-              </div>
-              <div class="modal-body">
-                <img class="img-responsive" src="../img/750x450.png" alt="Vídeo 02">
-              </div>
-              <div class="modal-footer">
-				<p>Uma breve descrição se preciso!</p>
-              </div>
-            </div>
-            <!-- /.modal-content -->
-          </div>
-          <!-- /.modal-dialog -->
-        </div>
-		
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
@@ -675,9 +650,18 @@ desired effect
 <!-- AdminLTE App -->
 <script src="../js/dashboard.js"></script>
 <!-- ChartJS -->
-<script src="../components/chart.js/Chart.js"></script>
+<script src="../components/Chart.js/Chart.js"></script>
 <!-- jQuery Knob -->
 <script src="../components/jquery-knob/js/jquery.knob.js"></script>
+<!-- InputMask -->
+<script src="../plugins/input-mask/jquery.inputmask.js"></script>
+<script src="../plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="../plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<!-- iCheck 1.0.1 -->
+<script src="../plugins/iCheck/icheck.min.js"></script>
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
 <script>
  $(function () {
 	/* jQueryKnob */
@@ -738,7 +722,40 @@ desired effect
     });
 	/* END JQUERY KNOB */
 	
+	$('[data-mask]').inputmask();
+	
+	 //iCheck for checkbox and radio inputs
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+      checkboxClass: 'icheckbox_minimal-blue',
+      radioClass   : 'iradio_minimal-blue'
+    })
+	
+	var widthValue;
+	
+	 if (window.matchMedia) {
+		
+		width991Check = window.matchMedia("(min-width: 991px)");
+		width991Check.addListener(setWidthValue);
+	 };
+	 
+	function setWidthValue (mediaQueryList) {
+	  if(mediaQueryList.matches && $("#iDlstContatos").hasClass('collapsed-box')){
+		$("[data-widget='collapse']").click();
+	  };
+	  if(!mediaQueryList.matches){
+		$("[data-widget='collapse']").click();
+	  };
+    };
+	
  });
+	function changeTipo(obj){
+		var faicon = $(obj).children('span').attr('class');
+		$('#mediaSelecioando').attr('class',' ');
+		$('#mediaSelecioando').addClass(faicon);
+		$('#nomeTipo').html('');
+	}
+	
+	
 </script>
 </body>
 </html>

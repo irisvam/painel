@@ -80,81 +80,6 @@ desired effect
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-          <!-- Tasks Menu -->
-          <li class="dropdown messages-menu">
-            <!-- Menu Toggle Button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-paper-plane-o"></i>
-              <span class="label label-warning">9</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">Você tem 9 recados</li>
-              <li>
-                <!-- inner menu: contains the messages -->
-                <ul class="menu">
-                  <li><!-- start message -->
-                    <a href="#">
-                      <div class="pull-left">
-                        01
-                      </div>
-                      <!-- Message title and timestamp -->
-                      <h4>
-                        Maria Gonzales
-                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                      </h4>
-                      <!-- The message -->
-                      <p>Gostaria de saber...</p>
-                    </a>
-                  </li>
-				  <li><!-- start message -->
-                    <a href="#">
-                      <div class="pull-left">
-                       02
-                      </div>
-                      <!-- Message title and timestamp -->
-                      <h4>
-                        Luna Stark
-                        <small><i class="fa fa-clock-o"></i> 10 mins</small>
-                      </h4>
-                      <!-- The message -->
-                      <p>Qual é a margem de...</p>
-                    </a>
-                  </li>
-				  <li><!-- start message -->
-                    <a href="#">
-                      <div class="pull-left">
-                        03
-                      </div>
-                      <!-- Message title and timestamp -->
-                      <h4>
-                        Nora Havisham
-                        <small><i class="fa fa-clock-o"></i> 2 horas</small>
-                      </h4>
-                      <!-- The message -->
-                      <p>Você pode me ajudar?</p>
-                    </a>
-                  </li>
-				  <li><!-- start message -->
-                    <a href="#">
-                      <div class="pull-left">
-                        04
-                      </div>
-                      <!-- Message title and timestamp -->
-                      <h4>
-                        Filipe
-                        <small><i class="fa fa-clock-o"></i> 1 dia</small>
-                      </h4>
-                      <!-- The message -->
-                      <p>Descobri que no final do mês...</p>
-                    </a>
-                  </li>
-                  <!-- end message -->
-                </ul>
-                <!-- /.menu -->
-              </li>
-              <li class="footer"><a href="#">Ver todas</a></li>
-            </ul>
-          </li>
           <!-- Messages: style can be found in dropdown.less-->
           <li class="dropdown messages-menu">
             <!-- Menu toggle button -->
@@ -235,6 +160,81 @@ desired effect
             </ul>
           </li>
           <!-- /.messages-menu -->
+          <!-- Tasks Menu -->
+          <li class="dropdown messages-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-paper-plane-o"></i>
+              <span class="label label-warning">9</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">Você tem 9 recados</li>
+              <li>
+                <!-- inner menu: contains the messages -->
+                <ul class="menu">
+                  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        01
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Maria Gonzales
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Gostaria de saber...</p>
+                    </a>
+                  </li>
+				  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                       02
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Luna Stark
+                        <small><i class="fa fa-clock-o"></i> 10 mins</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Qual é a margem de...</p>
+                    </a>
+                  </li>
+				  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        03
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Nora Havisham
+                        <small><i class="fa fa-clock-o"></i> 2 horas</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Você pode me ajudar?</p>
+                    </a>
+                  </li>
+				  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        04
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Filipe
+                        <small><i class="fa fa-clock-o"></i> 1 dia</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Descobri que no final do mês...</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                </ul>
+                <!-- /.menu -->
+              </li>
+              <li class="footer"><a href="recados.html">Ver todas</a></li>
+            </ul>
+          </li>
 
           <!-- Notifications Menu -->
           <li class="dropdown notifications-menu">
@@ -280,7 +280,7 @@ desired effect
                   <!-- end notification -->
                 </ul>
               </li>
-              <li class="footer"><a href="#">Ver todos</a></li>
+              <li class="footer"><a href="avisos.html">Ver todos</a></li>
             </ul>
           </li>
           <!-- User Account Menu -->
@@ -298,7 +298,15 @@ desired effect
 				<!-- Add the bg color to the header using any of the bg-* classes -->
 				<div class="widget-user-header bg-aqua-active">
 				  <h3 class="widget-user-username">Nome Usuário</h3>
-				  <h5 class="widget-user-desc">Promoter Start</h5>
+				  <h5 class="widget-user-desc">Promoter Start
+						<span class="pull-right">
+							<i class="fa fa-star text-yellow"></i>
+							<i class="fa fa-star text-yellow"></i>
+							<i class="fa fa-star text-yellow"></i>
+							<i class="fa fa-star-o text-yellow"></i>
+							<i class="fa fa-star-o text-yellow"></i>
+						</span>
+					</h5>
 				</div>
 				<div class="widget-user-image">
 				  <img class="img-circle" src="../img/user.png" alt="User Avatar">
@@ -380,8 +388,8 @@ desired effect
 		<li><a href="videos.html"><i class="fa fa-caret-square-o-right"></i> <span>Vídeos</span></a></li>
 		<li class="header">FINCANCEIRO</li>
 		<li><a href="#"><i class="fa fa-shopping-cart"></i> <span>Mensalidade</span></a></li>
-		<li><a href="#"><i class="fa fa-money"></i> <span>Monetização</span></a></li>
-		<li><a href="#"><i class="fa fa-bank"></i> <span>Conta</span></a></li>
+		<li><a href="monetizacao.html"><i class="fa fa-money"></i> <span>Monetização</span></a></li>
+		<li><a href="conta_bancaria.html"><i class="fa fa-bank"></i> <span>Conta</span></a></li>
 		<li class="header">CORRESPONDÊNCIA</li>
 		<li class="active">
 			<a href="#">
@@ -393,7 +401,7 @@ desired effect
 			</a>
 		</li>
 		<li>
-			<a href="#">
+			<a href="recados.html">
 				<i class="fa fa-paper-plane-o"></i> 
 				<span>Recados</span>
 				<span class="pull-right-container">
@@ -402,7 +410,7 @@ desired effect
 			</a>
 		</li>
 		<li>
-			<a href="#">
+			<a href="avisos.html">
 				<i class="fa fa-bell-o"></i> 
 				<span>Avisos</span>
 				<span class="pull-right-container">
@@ -444,89 +452,96 @@ desired effect
 		<!-- /.row -->
 		<div class="row">
 			<div class="col-md-4">
-				<div class="box box-success">
+				<div id="iDlstContatos" class="box box-success">
 					<div class="box-header with-border">
 						<div class="input-group">
-							<input type="text" name="q" class="form-control" placeholder="Search...">
 							<span class="input-group-btn">
-								<button type="submit" name="search" id="search-btn" class="btn btn-flat">
+								<a href="#" class="btn btn-success btn-flat btn-contatos" alt="Contatos" title="Contatos" data-widget="collapse">
+									<i class="fa fa-group"></i>
+								</a>
+							</span>
+							<input type="text" name="q" class="form-control" placeholder="Procurar...">
+							<span class="input-group-btn">
+								<button type="submit" name="search" id="search-btn" class="btn btn-primary btn-flat">
 									<i class="fa fa-search"></i>
 								</button>
 							</span>
 						</div>
 					</div>
 					<!-- /.box-header -->
-					<div class="box-body">
-						<div class="post no-padding">
-							<div class="user-block">
-								<img class="img-circle" src="../img/user.png" alt="User Image">
-								<div class="pull-right">
-									<span data-toggle="tooltip" title="" class="badge bg-yellow" data-original-title="3 New Messages">3</span>
+					<div class="box-body box-contatos">
+						<div class="direct-chat-messages">
+							<div class="post no-padding">
+								<div class="user-block">
+									<img class="img-circle" src="../img/user.png" alt="User Image">
+									<div class="pull-right">
+										<span data-toggle="tooltip" title="" class="badge bg-yellow" data-original-title="3 New Messages">3</span>
+									</div>
+									<span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+									<span class="description">Promoter Star</span>
 								</div>
-								<span class="username"><a href="#">Jonathan Burke Jr.</a></span>
-								<span class="description">Promoter Star</span>
 							</div>
-						</div>
-						<div class="post no-padding">
-							<div class="user-block">
-								<img class="img-circle" src="../img/user.png" alt="User Image">
-								<span class="username"><a href="#">Hilton Carlos</a></span>
-								<span class="description">Promoter Trainee</span>
-							</div>
-						</div>
-						<div class="post no-padding">
-							<div class="user-block">
-								<img class="img-circle" src="../img/user.png" alt="User Image">
-								<div class="pull-right">
-									<span data-toggle="tooltip" title="" class="badge bg-yellow" data-original-title="1 New Messages">1</span>
+							<div class="post no-padding">
+								<div class="user-block">
+									<img class="img-circle" src="../img/user.png" alt="User Image">
+									<span class="username"><a href="#">Hilton Carlos</a></span>
+									<span class="description">Promoter Trainee</span>
 								</div>
-								<span class="username"><a href="#">Amadeu Veiga</a></span>
-								<span class="description">Promoter Plus</span>
 							</div>
-						</div>
-						<div class="post no-padding">
-							<div class="user-block">
-								<img class="img-circle" src="../img/user.png" alt="User Image">
-								<span class="username"><a href="#">Christophher Felix</a></span>
-								<span class="description">Promoter Gold</span>
-							</div>
-						</div>
-						<div class="post no-padding">
-							<div class="user-block">
-								<img class="img-circle" src="../img/user.png" alt="User Image">
-								<span class="username"><a href="#">Amanda Jucker</a></span>
-								<span class="description">Promoter Star</span>
-							</div>
-						</div>
-						<div class="post no-padding">
-							<div class="user-block">
-								<img class="img-circle" src="../img/user.png" alt="User Image">
-								<div class="pull-right">
-									<span data-toggle="tooltip" title="" class="badge bg-green" data-original-title="2 New Messages">2</span>
+							<div class="post no-padding">
+								<div class="user-block">
+									<img class="img-circle" src="../img/user.png" alt="User Image">
+									<div class="pull-right">
+										<span data-toggle="tooltip" title="" class="badge bg-yellow" data-original-title="1 New Messages">1</span>
+									</div>
+									<span class="username"><a href="#">Amadeu Veiga</a></span>
+									<span class="description">Promoter Plus</span>
 								</div>
-								<span class="username"><a href="#">Patricia Maia</a></span>
-								<span class="description">Promoter Diamond</span>
 							</div>
-						</div>
-						<div class="post no-padding">
-							<div class="user-block">
-								<img class="img-circle" src="../img/user.png" alt="User Image">
-								<span class="username"><a href="#">Aldebaran Taurus</a></span>
-								<span class="description">Promoter Star</span>
+							<div class="post no-padding">
+								<div class="user-block">
+									<img class="img-circle" src="../img/user.png" alt="User Image">
+									<span class="username"><a href="#">Christophher Felix</a></span>
+									<span class="description">Promoter Gold</span>
+								</div>
 							</div>
-						</div>
-						<div class="post no-padding">
-							<div class="user-block">
-								<img class="img-circle" src="../img/user.png" alt="User Image">
-								<span class="username"><a href="#">Feliciano Jorge</a></span>
-								<span class="description">Promoter Diamond</span>
+							<div class="post no-padding">
+								<div class="user-block">
+									<img class="img-circle" src="../img/user.png" alt="User Image">
+									<span class="username"><a href="#">Amanda Jucker</a></span>
+									<span class="description">Promoter Star</span>
+								</div>
 							</div>
-						</div>
-						<div class="post no-padding">
-							<div class="user-block">
-								<img class="img-circle" src="../img/user.png" alt="User Image">
-								<span class="username"><a href="#">Carlos Fernando Veiga</a></span>
-								<span class="description">Promoter Star</span>
+							<div class="post no-padding">
+								<div class="user-block">
+									<img class="img-circle" src="../img/user.png" alt="User Image">
+									<div class="pull-right">
+										<span data-toggle="tooltip" title="" class="badge bg-green" data-original-title="2 New Messages">2</span>
+									</div>
+									<span class="username"><a href="#">Patricia Maia</a></span>
+									<span class="description">Promoter Diamond</span>
+								</div>
+							</div>
+							<div class="post no-padding">
+								<div class="user-block">
+									<img class="img-circle" src="../img/user.png" alt="User Image">
+									<span class="username"><a href="#">Aldebaran Taurus</a></span>
+									<span class="description">Promoter Star</span>
+								</div>
+							</div>
+							<div class="post no-padding">
+								<div class="user-block">
+									<img class="img-circle" src="../img/user.png" alt="User Image">
+									<span class="username"><a href="#">Feliciano Jorge</a></span>
+									<span class="description">Promoter Diamond</span>
+								</div>
+							</div>
+							<div class="post no-padding">
+								<div class="user-block">
+									<img class="img-circle" src="../img/user.png" alt="User Image">
+									<span class="username"><a href="#">Carlos Fernando Veiga</a></span>
+									<span class="description">Promoter Star</span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -742,6 +757,22 @@ desired effect
       radioClass   : 'iradio_minimal-blue'
     })
 	
+	var widthValue;
+	
+	 if (window.matchMedia) {
+		
+		width991Check = window.matchMedia("(min-width: 991px)");
+		width991Check.addListener(setWidthValue);
+	 };
+	 
+	function setWidthValue (mediaQueryList) {
+	  if(mediaQueryList.matches && $("#iDlstContatos").hasClass('collapsed-box')){
+		$("[data-widget='collapse']").click();
+	  };
+	  if(!mediaQueryList.matches){
+		$("[data-widget='collapse']").click();
+	  };
+    };
 	
  });
 	function changeTipo(obj){
@@ -750,6 +781,8 @@ desired effect
 		$('#mediaSelecioando').addClass(faicon);
 		$('#nomeTipo').html('');
 	}
+	
+	
 </script>
 </body>
 </html>

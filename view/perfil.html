@@ -80,81 +80,6 @@ desired effect
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-          <!-- Tasks Menu -->
-          <li class="dropdown messages-menu">
-            <!-- Menu Toggle Button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-paper-plane-o"></i>
-              <span class="label label-warning">9</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">Você tem 9 recados</li>
-              <li>
-                <!-- inner menu: contains the messages -->
-                <ul class="menu">
-                  <li><!-- start message -->
-                    <a href="#">
-                      <div class="pull-left">
-                        01
-                      </div>
-                      <!-- Message title and timestamp -->
-                      <h4>
-                        Maria Gonzales
-                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                      </h4>
-                      <!-- The message -->
-                      <p>Gostaria de saber...</p>
-                    </a>
-                  </li>
-				  <li><!-- start message -->
-                    <a href="#">
-                      <div class="pull-left">
-                       02
-                      </div>
-                      <!-- Message title and timestamp -->
-                      <h4>
-                        Luna Stark
-                        <small><i class="fa fa-clock-o"></i> 10 mins</small>
-                      </h4>
-                      <!-- The message -->
-                      <p>Qual é a margem de...</p>
-                    </a>
-                  </li>
-				  <li><!-- start message -->
-                    <a href="#">
-                      <div class="pull-left">
-                        03
-                      </div>
-                      <!-- Message title and timestamp -->
-                      <h4>
-                        Nora Havisham
-                        <small><i class="fa fa-clock-o"></i> 2 horas</small>
-                      </h4>
-                      <!-- The message -->
-                      <p>Você pode me ajudar?</p>
-                    </a>
-                  </li>
-				  <li><!-- start message -->
-                    <a href="#">
-                      <div class="pull-left">
-                        04
-                      </div>
-                      <!-- Message title and timestamp -->
-                      <h4>
-                        Filipe
-                        <small><i class="fa fa-clock-o"></i> 1 dia</small>
-                      </h4>
-                      <!-- The message -->
-                      <p>Descobri que no final do mês...</p>
-                    </a>
-                  </li>
-                  <!-- end message -->
-                </ul>
-                <!-- /.menu -->
-              </li>
-              <li class="footer"><a href="#">Ver todas</a></li>
-            </ul>
-          </li>
           <!-- Messages: style can be found in dropdown.less-->
           <li class="dropdown messages-menu">
             <!-- Menu toggle button -->
@@ -231,10 +156,85 @@ desired effect
                 </ul>
                 <!-- /.menu -->
               </li>
-              <li class="footer"><a href="#">Ver todas</a></li>
+              <li class="footer"><a href="mensagens.html">Ver todas</a></li>
             </ul>
           </li>
           <!-- /.messages-menu -->
+          <!-- Tasks Menu -->
+          <li class="dropdown messages-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-paper-plane-o"></i>
+              <span class="label label-warning">9</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">Você tem 9 recados</li>
+              <li>
+                <!-- inner menu: contains the messages -->
+                <ul class="menu">
+                  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        01
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Maria Gonzales
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Gostaria de saber...</p>
+                    </a>
+                  </li>
+				  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                       02
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Luna Stark
+                        <small><i class="fa fa-clock-o"></i> 10 mins</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Qual é a margem de...</p>
+                    </a>
+                  </li>
+				  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        03
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Nora Havisham
+                        <small><i class="fa fa-clock-o"></i> 2 horas</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Você pode me ajudar?</p>
+                    </a>
+                  </li>
+				  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        04
+                      </div>
+                      <!-- Message title and timestamp -->
+                      <h4>
+                        Filipe
+                        <small><i class="fa fa-clock-o"></i> 1 dia</small>
+                      </h4>
+                      <!-- The message -->
+                      <p>Descobri que no final do mês...</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                </ul>
+                <!-- /.menu -->
+              </li>
+              <li class="footer"><a href="recados.html">Ver todas</a></li>
+            </ul>
+          </li>
 
           <!-- Notifications Menu -->
           <li class="dropdown notifications-menu">
@@ -280,7 +280,7 @@ desired effect
                   <!-- end notification -->
                 </ul>
               </li>
-              <li class="footer"><a href="#">Ver todos</a></li>
+              <li class="footer"><a href="avisos.html">Ver todos</a></li>
             </ul>
           </li>
           <!-- User Account Menu -->
@@ -298,7 +298,15 @@ desired effect
 				<!-- Add the bg color to the header using any of the bg-* classes -->
 				<div class="widget-user-header bg-aqua-active">
 				  <h3 class="widget-user-username">Nome Usuário</h3>
-				  <h5 class="widget-user-desc">Promoter Start</h5>
+				  <h5 class="widget-user-desc">Promoter Start
+						<span class="pull-right">
+							<i class="fa fa-star text-yellow"></i>
+							<i class="fa fa-star text-yellow"></i>
+							<i class="fa fa-star text-yellow"></i>
+							<i class="fa fa-star-o text-yellow"></i>
+							<i class="fa fa-star-o text-yellow"></i>
+						</span>
+					</h5>
 				</div>
 				<div class="widget-user-image">
 				  <img class="img-circle" src="../img/user.png" alt="User Avatar">
@@ -380,8 +388,8 @@ desired effect
 		<li><a href="videos.html"><i class="fa fa-caret-square-o-right"></i> <span>Vídeos</span></a></li>
 		<li class="header">FINCANCEIRO</li>
 		<li><a href="#"><i class="fa fa-shopping-cart"></i> <span>Mensalidade</span></a></li>
-		<li><a href="#"><i class="fa fa-money"></i> <span>Monetização</span></a></li>
-		<li><a href="#"><i class="fa fa-bank"></i> <span>Conta</span></a></li>
+		<li><a href="monetizacao.html"><i class="fa fa-money"></i> <span>Monetização</span></a></li>
+		<li><a href="conta_bancaria.html"><i class="fa fa-bank"></i> <span>Conta</span></a></li>
 		<li class="header">CORRESPONDÊNCIA</li>
 		<li>
 			<a href="mensagens.html">
@@ -393,7 +401,7 @@ desired effect
 			</a>
 		</li>
 		<li>
-			<a href="#">
+			<a href="recados.html">
 				<i class="fa fa-paper-plane-o"></i> 
 				<span>Recados</span>
 				<span class="pull-right-container">
@@ -402,7 +410,7 @@ desired effect
 			</a>
 		</li>
 		<li>
-			<a href="#">
+			<a href="avisos.html">
 				<i class="fa fa-bell-o"></i> 
 				<span>Avisos</span>
 				<span class="pull-right-container">
@@ -568,7 +576,7 @@ desired effect
 									</div>
 								</div>
 								<div class="form-group">
-									<div class="col-md-offset-10 col-sm-2">
+									<div class="col-sm-offset-9 col-md-offset-10 col-sm-3 col-md-2">
 										<button type="button" class="btn btn-block btn-primary">Salvar</button>
 									</div>
 								</div>
@@ -711,7 +719,7 @@ desired effect
 									</div>
 								</div>
 								<div class="form-group">
-									<div class="col-md-offset-9 col-sm-3">
+									<div class="col-sm-offset-9 col-md-offset-9 col-sm-3 col-md-3">
 										<button type="button" class="btn btn-block btn-primary">Salvar</button>
 									</div>
 								</div>
@@ -854,7 +862,7 @@ desired effect
 								</div>
 								
 								<div class="form-group">
-									<div class="col-md-offset-9 col-sm-3">
+									<div class="col-sm-offset-9 col-md-offset-9 col-sm-3 col-md-3">
 										<button type="button" class="btn btn-block btn-primary">Salvar</button>
 									</div>
 								</div>

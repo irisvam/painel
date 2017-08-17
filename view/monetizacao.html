@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>DivulPlace | Painel de Controle </title>
+  <title>DivulPlace | Monetização </title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="../components/bootstrap/dist/css/bootstrap.min.css">
@@ -375,7 +375,7 @@ desired effect
         <li class="header">MENU</li>
         <!-- Optionally, you can add icons to the links -->
         <li><a href="index.html"><i class="fa fa-home"></i> <span>Início</span></a></li>
-        <li class="active"><a href="#"><i class="fa fa-dashboard"></i> <span>Painel de Controle</span></a></li>
+        <li><a href="painel.html"><i class="fa fa-dashboard"></i> <span>Painel de Controle</span></a></li>
 		<li><a href="perfil.html"><i class="fa fa-user-circle"></i> <span>Perfil</span></a></li>
 		<li class="header">SERVIÇOS</li>
 		<li><a href="#"><i class="fa fa-address-book-o"></i> <span>Portifólio</span></a></li>
@@ -384,7 +384,7 @@ desired effect
 		<li><a href="videos.html"><i class="fa fa-caret-square-o-right"></i> <span>Vídeos</span></a></li>
 		<li class="header">FINCANCEIRO</li>
 		<li><a href="#"><i class="fa fa-shopping-cart"></i> <span>Mensalidade</span></a></li>
-		<li><a href="monetizacao.html"><i class="fa fa-money"></i> <span>Monetização</span></a></li>
+		<li class="active"><a href="#"><i class="fa fa-money"></i> <span>Monetização</span></a></li>
 		<li><a href="conta_bancaria.html"><i class="fa fa-bank"></i> <span>Conta</span></a></li>
 		<li class="header">CORRESPONDÊNCIA</li>
 		<li>
@@ -433,12 +433,13 @@ desired effect
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Painel de Controle
-        <small>Encontre o que procure aqui!</small>
+        Monetização
+        <small>Monitore os seus rendimentos!</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="index.html"><i class="fa fa-home"></i> Início</a></li>
-        <li class="active">Painel de Controle</li>
+        <li><a href="painel.html">Painel de Controle</a></li>
+        <li class="active">Monetização</li>
       </ol>
     </section>
 
@@ -612,362 +613,320 @@ desired effect
 	</div>
 	
 	<div class="row">
-		<div class="col-md-8">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="box box-info">
-						<div class="box-header with-border">
-							<h3 class="box-title">Pagamento</h3>
-						</div>
-						<div class="box-body text-center">
-							<input type="text" class="knob" value="10" data-linecap="round" data-width="220" data-height="220" data-min="1" data-max="31" data-fgColor="#3c8dbc" data-readonly="true">
-						</div>
-						<div class="box-footer no-padding"></div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="box box-primary">
-						<div class="box-header with-border">
-							<h3 class="box-title">Modelo de Cartão</h3>
-						</div>
-						<div class="box-body">
-							<div class="col-md-12">
-								<img class="img-responsive" src="../img/cartao.jpg" alt="Cartão de Visitas">
-							</div>
-						</div>
-						<div class="box-footer no-padding text-center">
-							<button type="button" class="btn btn-sm btn-success"><i class="fa fa-download"></i> Baixar</button>
-							<button type="button" class="btn btn-sm btn-success"><i class="fa fa-file-o"></i> Novo</button>
-							<button type="button" class="btn btn-sm btn-primary" style="margin-right: 5px;"><i class="fa fa-edit"></i> Editar</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="box box-warning">
-				<div class="box-header with-border">
-					<h3 class="box-title">Vídeos Sugeridos</h3>
-				</div>
-				<div class="box-body">
-					<div class="row">
-						<div class="col-md-6">
-							<a href="#" data-toggle="modal" data-target="#modal-default">
-								<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
-							</a>
-							<dl>
-								<dt>Vídeo 01</dt>
-								<dd>Descrição para o vídeo 01</dd>
-							</dl>
-						</div>
-						<div class="col-md-6">
-							<a href="#" data-toggle="modal" data-target="#modal-default">
-								<img class="img-responsive" src="../img/750x450.png" alt="Vídeo 01">
-							</a>
-							<dl>
-								<dt>Vídeo 02</dt>
-								<dd>Descrição para o vídeo 02</dd>
-							</dl>
-						</div>
-					</div>
-				</div>
-				<div class="box-footer no-padding"></div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="box box-default">
-				<div class="box-header with-border">
-					<h3 class="box-title">Atividades Recentes</h3>
-				</div>
-				<div class="box-body">
-					<ul class="timeline">
-						<!-- timeline time label -->
-						<li class="time-label">
-							<span class="bg-red">
-								10 Feb. 2014
-							</span>
-						</li>
-						<!-- /.timeline-label -->
-						<!-- timeline item -->
-						<li>
-							<!-- timeline icon -->
-							<i class="fa fa-envelope bg-blue"></i>
-							<div class="timeline-item">
-								<span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
-								<h3 class="timeline-header"><a href="#">Mensagem Nova</a> ...</h3>
-								<div class="timeline-body">
-									Você recebeu uma mensagem nova.
-								</div>
-							</div>
-						</li>
-						<!-- END timeline item -->
-						<!-- timeline item -->
-						<li>
-							<i class="fa fa-user bg-aqua"></i>
-							<div class="timeline-item">
-								<span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>
-								<h3 class="timeline-header no-border"><a href="#">Afiliado Novo</a></h3>
-								<div class="timeline-body">
-									Você recebeu um afiliado novo.
-								</div>
-							</div>
-						</li>
-						<!-- timeline time label -->
-						<li class="time-label">
-							  <span class="bg-green">
-								3 Jan. 2014
-							  </span>
-						</li>
-						<!-- /.timeline-label -->
-						<!-- timeline item -->
-						<li>
-						  <i class="fa fa-camera bg-purple"></i>
+        <div class="col-lg-2 col-sm-4 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3>30</h3>
 
-						  <div class="timeline-item">
-							<span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
+              <p>Afiliados de 1ºGrau</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-user"></i>
+            </div>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-2 col-sm-4 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3>350</h3>
 
-							<h3 class="timeline-header"><a href="#">Mídia Nova</a> </h3>
-							<div class="timeline-body">
-								Você atualizou sua fotos.
-							</div>
-						  </div>
-						</li>
-						<!-- END timeline item -->
-						<!-- timeline item -->
-						<li>
-						  <i class="fa fa-bell-o bg-yellow"></i>
+              <p>Demais Afiliados</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-users"></i>
+            </div>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-2 col-sm-4 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3>120</h3>
 
-						  <div class="timeline-item">
-							<span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
+              <p>Afiliados Ativos</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-thumbs-o-up"></i>
+            </div>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-2 col-sm-4 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3>15</h3>
 
-							<h3 class="timeline-header"><a href="#">Avisos</a> </h3>
-							<div class="timeline-body">
-								Você recebeu novos avisos.
-							</div>
-						  </div>
-						</li>
-						<!-- END timeline item -->
-						<li>
-						  <i class="fa fa-clock-o bg-gray"></i>
-						</li>
-					</ul>
-				</div>
-				<div class="box-footer no-padding"></div>
-			</div>
-		</div>
-	</div>
-	
+              <p>Afiliados Novos</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-person-add"></i>
+            </div>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-4 col-sm-8 col-xs-12">
+          <!-- small box -->
+          <div class="info-box bg-green">
+            <span class="info-box-icon"><i class="fa fa-anchor"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Pontos</span>
+              <span class="info-box-number">420</span>
+
+              <div class="progress">
+                <div class="progress-bar" style="width: 70%"></div>
+              </div>
+                  <span class="progress-description">
+                    Promoter Start
+					<span class="pull-right">
+						<i class="fa fa-star text-yellow"></i>
+						<i class="fa fa-star text-yellow"></i>
+						<i class="fa fa-star text-yellow"></i>
+						<i class="fa fa-star-o text-yellow"></i>
+						<i class="fa fa-star-o text-yellow"></i>
+					</span>
+                  </span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+        </div>
+        <!-- ./col -->
+      </div>
+	  
 	<div class="row">
+		<div class="col-md-8">
+			<div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Afiliados</h3>
+
+              <div class="box-tools">
+                <div class="input-group input-group-sm" style="width: 200px;">
+                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Procurar">
+
+                  <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-body">
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>Carreira</th>
+                    <th width="75">Situação</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>
+						<img class="img-responsive img-circle img-sm" src="../img/user.png" alt="Alt Text">
+						<div class="img-tab">
+						  Maria Carvalho
+						</div>
+					</td>
+                    <td>
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-anchor fa-stack-1x text-muted"></i>
+						</span>
+						<span class="badge bg-gray">Promoter Start</span>
+					</td>
+                    <td>
+						<span class="label label-success">Ativo</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+						<img class="img-responsive img-circle img-sm" src="../img/user.png" alt="Alt Text">
+						<div class="img-tab">
+						  Feliciano Jorge
+						</div>
+					</td>
+                    <td>
+						<span class="fa-stack fa-lg">
+							<i class="fa  fa-diamond fa-stack-1x text-aqua"></i>
+						</span>
+						<span class="badge bg-blue">Promoter Diamond</span>
+					</td>
+                    <td>
+                      <span class="label label-warning">Pendente</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+						<img class="img-responsive img-circle img-sm" src="../img/user.png" alt="Alt Text">
+						<div class="img-tab">
+						  Christophher Felix
+						</div>
+					</td>
+                    <td>
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-sun-o fa-stack-1x text-yellow"></i>
+						</span>
+						<span class="badge bg-yellow">Promoter Gold</span>
+					</td>
+                    <td>
+                      <span class="label label-danger">Inativo</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+						<img class="img-responsive img-circle img-sm" src="../img/user.png" alt="Alt Text">
+						<div class="img-tab">
+						  Patricia Maia
+						</div>
+					</td>
+                    <td>
+						<span class="fa-stack fa-lg">
+							<i class="fa  fa-diamond fa-stack-1x text-aqua"></i>
+						</span>
+						<span class="badge bg-blue">Promoter Diamond</span>
+					</td>
+                    <td>
+                      <span class="label label-primary">Processando</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+						<img class="img-responsive img-circle img-sm" src="../img/user.png" alt="Alt Text">
+						<div class="img-tab">
+						  Amanda Jucker
+						</div>
+					</td>
+                    <td>
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-anchor fa-stack-1x text-muted"></i>
+						</span>
+						<span class="badge bg-gray">Promoter Start</span>
+					</td>
+                    <td>                      
+						<span class="label label-success">Ativo</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+						<img class="img-responsive img-circle img-sm" src="../img/user.png" alt="Alt Text">
+						<div class="img-tab">
+						  Amadeu Veiga
+						</div>
+					</td>
+                    <td>
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-coffee fa-stack-1x text-light-blue"></i>
+						</span>
+						<span class="badge bg-light-blue">Promoter Plus</span>
+					</td>
+                    <td>
+                      <span class="label label-danger">Inativo</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+						<img class="img-responsive img-circle img-sm" src="../img/user.png" alt="Alt Text">
+						<div class="img-tab">
+						  Jonathan Burke Jr.
+						</div>
+					</td>
+                    <td>
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-coffee fa-stack-1x text-light-blue"></i>
+						</span>
+						<span class="badge bg-light-blue">Promoter Plus</span>
+                    <td>
+                      <span class="label label-success">Ativo</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+						<img class="img-responsive img-circle img-sm" src="../img/user.png" alt="Alt Text">
+						<div class="img-tab">
+						  Inara Duarte
+						</div>
+					</td>
+                    <td>
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-anchor fa-stack-1x text-muted"></i>
+						</span>
+						<span class="badge bg-gray">Promoter Start</span>
+                    <td>
+                      <span class="label label-success">Ativo</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+						<img class="img-responsive img-circle img-sm" src="../img/user.png" alt="Alt Text">
+						<div class="img-tab">
+						  Christian Felix
+						</div>
+					</td>
+                    <td>
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-beer fa-stack-1x text-green"></i>
+						</span>
+						<span class="badge bg-green">Promoter Trainee</span>
+                    <td>
+                      <span class="label label-primary">Processando</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+						<img class="img-responsive img-circle img-sm" src="../img/user.png" alt="Alt Text">
+						<div class="img-tab">
+						  Hilton Carlos
+						</div>
+					</td>
+                    <td>
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-beer fa-stack-1x text-green"></i>
+						</span>
+						<span class="badge bg-green">Promoter Trainee</span>
+                    <td>
+                      <span class="label label-success">Ativo</span>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+			<div class="box-footer clearfix text-center">
+              <ul class="pagination pagination-sm no-margin">
+                <li><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+		</div>
 		<div class="col-md-4">
 			<div class="box box-success">
 				<div class="box-header with-border">
-					<h3 class="box-title">Últimas mensagens</h3>
+					<h3 class="box-title">Solicitações</h3>
 				</div>
 				<div class="box-body">
-					<div class="direct-chat-messages">
-						<div class="direct-chat-msg">
-							<div class="direct-chat-info clearfix">
-								<span class="direct-chat-name pull-left">Afiliado 01</span>
-								<span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-							</div>
-							<!-- /.direct-chat-info -->
-							<img class="direct-chat-img" src="../img/user.png" alt="Message User Image"><!-- /.direct-chat-img -->
-							<div class="direct-chat-text">
-								Is this template really for free? That's unbelievable!
-							</div>
-							<!-- /.direct-chat-text -->
-						</div>
-						<div class="direct-chat-msg">
-							<div class="direct-chat-info clearfix">
-								<span class="direct-chat-name pull-left">Afiliado 02</span>
-								<span class="direct-chat-timestamp pull-right">10 Feb 4:00 am</span>
-							</div>
-							<!-- /.direct-chat-info -->
-							<img class="direct-chat-img" src="../img/user.png" alt="Message User Image"><!-- /.direct-chat-img -->
-							<div class="direct-chat-text">
-								Is this template really for free? That's unbelievable!
-							</div>
-							<!-- /.direct-chat-text -->
-						</div>
-						<div class="direct-chat-msg">
-							<div class="direct-chat-info clearfix">
-								<span class="direct-chat-name pull-left">Afiliado 03</span>
-								<span class="direct-chat-timestamp pull-right">03 Mar 1:35 pm</span>
-							</div>
-							<!-- /.direct-chat-info -->
-							<img class="direct-chat-img" src="../img/user.png" alt="Message User Image"><!-- /.direct-chat-img -->
-							<div class="direct-chat-text">
-								Is this template really for free? That's unbelievable!
-							</div>
-							<!-- /.direct-chat-text -->
-						</div>
-					</div>
+					<button type="button" class="btn btn-block btn-success">Fazer Saque</button>
+					<hr/>
+					<button type="button" class="btn btn-block btn-primary">Relatórios de Saques</button>
+					<button type="button" class="btn btn-block btn-primary">Relatório de Pagamentos</button>
+					<button type="button" class="btn btn-block btn-primary">Relatório de Adesão</button>
 				</div>
-				<div class="box-footer no-padding">
-					<a href="mensagens.html" class="btn btn-success btn-block btn-sm">Ver todas</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="box box-warning">
-				<div class="box-header with-border">
-					<h3 class="box-title">Últimos Recados</h3>
-				</div>
-				<div class="box-body">
-					<div class="direct-chat-messages">
-						<div class="direct-chat-msg">
-							<div class="direct-chat-info clearfix">
-								<span class="direct-chat-name pull-left">
-									Maria Gonzales
-								</span>
-								<span class="direct-chat-timestamp pull-right">
-									8:03 PM Today
-								</span>
-							</div>
-							<div>
-								It is a long established fact that a reader will be distracted
-								by the readable content of a page when looking at its layout.
-							</div>
-						</div>
-						<div class="direct-chat-msg">
-							<div class="direct-chat-info clearfix">
-								<span class="direct-chat-name pull-left">
-									Luna Stark
-								</span>
-								<span class="direct-chat-timestamp pull-right">
-									8:03 PM Today
-								</span>
-							</div>
-							<div>
-								It is a long established fact that a reader will be distracted
-								by the readable content of a page when looking at its layout.
-							</div>
-						</div>
-						<div class="direct-chat-msg">
-							<div class="direct-chat-info clearfix">
-								<span class="direct-chat-name pull-left">
-									Nora Havisham
-								</span>
-								<span class="direct-chat-timestamp pull-right">
-									8:03 PM Today
-								</span>
-							</div>
-							<div>
-								The point of using Lorem Ipsum is that it has a more-or-less
-						  normal distribution of letters, as opposed to using
-						  'Content here, content here', making it look like readable English 
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="box-footer no-padding">
-					<button type="button" class="btn btn-warning btn-block btn-sm">Ver todos</button>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="box box-danger">
-				<div class="box-header with-border">
-					<h3 class="box-title">Últimos Avisos</h3>
-				</div>
-				<div class="box-body">
-					<div class="direct-chat-messages">
-						<div class="direct-chat-msg">
-							<div class="direct-chat-info clearfix">
-								<span class="direct-chat-name pull-left">Novo Afiliado</span>
-								<span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-							</div>
-							<!-- /.direct-chat-info -->
-							<div class="direct-chat-img">
-								<i class="fa fa-users text-aqua"></i>
-							</div>
-							<div class="">
-								Joanna Nogueira é um novo Afiliado.
-							</div>
-							<!-- /.direct-chat-text -->
-						</div>
-						<div class="direct-chat-msg">
-							<div class="direct-chat-info clearfix">
-								<span class="direct-chat-name pull-left">Novo Afiliado</span>
-								<span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-							</div>
-							<!-- /.direct-chat-info -->
-							<div class="direct-chat-img">
-								<i class="fa fa-user text-green"></i>
-							</div>
-							<div class="">
-								Você atualizou seus dados do Perfil.
-							</div>
-							<!-- /.direct-chat-text -->
-						</div>
-						<div class="direct-chat-msg">
-							<div class="direct-chat-info clearfix">
-								<span class="direct-chat-name pull-left">Erro no Pagamento</span>
-								<span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-							</div>
-							<!-- /.direct-chat-info -->
-							<div class="direct-chat-img">
-								<i class="fa fa-warning text-yellow"></i>
-							</div>
-							<div class="">
-								Gustavo Mello não compeltou seu pagamento.
-							</div>
-							<!-- /.direct-chat-text -->
-						</div>
-						<div class="direct-chat-msg">
-							<div class="direct-chat-info clearfix">
-								<span class="direct-chat-name pull-left">Pagamento de Afiliado</span>
-								<span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-							</div>
-							<!-- /.direct-chat-info -->
-							<div class="direct-chat-img">
-								<i class="fa fa-shopping-cart text-green"></i>
-							</div>
-							<div class="">
-								Fernando Carlos efetuou o pagamento.
-							</div>
-							<!-- /.direct-chat-text -->
-						</div>
-						<div class="direct-chat-msg">
-							<div class="direct-chat-info clearfix">
-								<span class="direct-chat-name pull-left">Afiliado Inativado</span>
-								<span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-							</div>
-							<!-- /.direct-chat-info -->
-							<div class="direct-chat-img">
-								<i class="fa fa-users text-red"></i>
-							</div>
-							<div class="">
-								Enrique Alves se tornou Inativo.
-							</div>
-							<!-- /.direct-chat-text -->
-						</div>
-					</div>
-				</div>
-				<div class="box-footer no-padding">
-					<button type="button" class="btn btn-danger btn-block btn-sm">Ver todos</button>
-				</div>
+				<div class="box-footer no-padding"></div>
 			</div>
 		</div>
 	</div>
 	
-		<div class="modal fade" id="modal-default">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Título Vídeo</h4>
-              </div>
-              <div class="modal-body">
-                <img class="img-responsive" src="../img/750x450.png" alt="Vídeo 02">
-              </div>
-              <div class="modal-footer">
-				<p>Uma breve descrição se preciso!</p>
-              </div>
-            </div>
-            <!-- /.modal-content -->
-          </div>
-          <!-- /.modal-dialog -->
-        </div>
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
