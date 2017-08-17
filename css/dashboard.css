@@ -4999,6 +4999,12 @@ span.divulplace-brand-sgl {
 	height: 600px;
 }
 
+@media (min-width: 991px) {
+	.box-contatos .direct-chat-messages {
+		height: auto;
+	}
+}
+
 .box-chat .direct-chat-msg {
 	margin: 0px 30px 30px 30px;
 }
@@ -5022,4 +5028,26 @@ ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
   background-color: #344869;
   color: #fff;
+}
+.btn-contatos {
+	display: none;
+}
+@media (max-width: 991px) {
+	
+	.btn-contatos {
+		display: block;
+	}
+}
+.time-recado {
+	margin-right: 20px;
+}
+
+.img-tab {
+	margin-left: 40px;
+	margin-top: 5px;
+}
+
+span.form-control {
+	border: none;
+	padding: 0px;
 }
