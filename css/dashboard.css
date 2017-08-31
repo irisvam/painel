@@ -5051,3 +5051,106 @@ span.form-control {
 	border: none;
 	padding: 0px;
 }
+
+.img-perfil-portifolio {
+	position: absolute;
+	left: 50%;
+}
+
+.painel-perfil-portifolio {
+	border: 2px solid #00c0ef;
+}
+
+.pessoal-perfil-portifolio {
+	text-align: center;
+}
+
+.pessoal-perfil-portifolio h3 {
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+	
+.pessoal-perfil-portifolio h5 {
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+.social-perfil-portifolio {
+	list-style: none;
+	margin-top: 15px;
+}
+.social-perfil-portifolio li {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: block;
+	height: 25px;
+}
+.social-perfil-portifolio li > a {
+	position: relative;
+}
+.social-perfil-portifolio > li > a {
+	padding: 8px 5px 8px 15px;
+	display: block;
+}
+.social-perfil-portifolio > li > a > .fa {
+	font-size: 1.3em;
+	width: 25px;
+}
+.btn-perfil-portifolio {
+	margin: 5px;
+	text-align: right;
+}
+.btn-perfil-portifolio .btn  {
+	width: 100%;
+}
+
+@media (max-width: 991px) {
+	.img-perfil-portifolio {
+		margin-left: -90px;
+	}
+	
+	.painel-perfil-portifolio {
+		margin-top: 100px;
+	}
+	.pessoal-perfil-portifolio h3 {
+		margin-top: 90px;
+	}
+	.social-perfil-portifolio {
+		border-top: 2px solid #ccc;
+		padding-left: 0px;
+		margin: 20px; 
+	}
+	.social-perfil-portifolio > li > a > .fa {
+		float: left;
+	}
+}
+
+@media (min-width: 991px) {
+	
+	.img-perfil-portifolio {
+		left: 100px;
+		top: 20px;
+	}
+	.painel-perfil-portifolio {
+		margin-left: 180px;
+		text-align: right;
+	}
+	.pessoal-perfil-portifolio {
+		position: absolute;
+		top: 20px;
+		width: 65%;
+	}
+	.social-perfil-portifolio {
+		display: inline-block;
+		text-align: right;
+	}
+	.btn-perfil-portifolio .btn  {
+		width: 100px;
+		margin-right: 100px;
+	}
+}
+
+.bootstrap-tagsinput {
+	width: 100%;
+}
