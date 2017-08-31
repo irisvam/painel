@@ -382,7 +382,7 @@ desired effect
         <li><a href="painel.html"><i class="fa fa-dashboard"></i> <span>Painel de Controle</span></a></li>
 		<li><a href="perfil.html"><i class="fa fa-user-circle"></i> <span>Perfil</span></a></li>
 		<li class="header">SERVIÇOS</li>
-		<li><a href="#"><i class="fa fa-address-book-o"></i> <span>Portifólio</span></a></li>
+		<li><a href="portifolio.html"><i class="fa fa-address-book-o"></i> <span>Portifólio</span></a></li>
 		<li><a href="#"><i class="fa fa-files-o"></i> <span>Folder/Flyer</span></a></li>
 		<li><a href="#"><i class="fa fa-id-card-o"></i> <span>Cartão de Visitas</span></a></li>
 		<li><a href="videos.html"><i class="fa fa-caret-square-o-right"></i> <span>Vídeos</span></a></li>
@@ -730,13 +730,9 @@ desired effect
       radioClass   : 'iradio_minimal-blue'
     })
 	
-	var widthValue;
-	
-	 if (window.matchMedia) {
-		
-		width991Check = window.matchMedia("(min-width: 991px)");
-		width991Check.addListener(setWidthValue);
-	 };
+	width991Check = window.matchMedia("(min-width: 991px)");
+	setWidthValue(width991Check);
+	width991Check.addListener(setWidthValue);
 	 
 	function setWidthValue (mediaQueryList) {
 	  if(mediaQueryList.matches && $("#iDlstContatos").hasClass('collapsed-box')){

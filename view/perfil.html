@@ -382,7 +382,7 @@ desired effect
         <li><a href="painel.html"><i class="fa fa-dashboard"></i> <span>Painel de Controle</span></a></li>
 		<li class="active"><a href="#"><i class="fa fa-user-circle"></i> <span>Perfil</span></a></li>
 		<li class="header">SERVIÇOS</li>
-		<li><a href="#"><i class="fa fa-address-book-o"></i> <span>Portifólio</span></a></li>
+		<li><a href="portifolio.html"><i class="fa fa-address-book-o"></i> <span>Portifólio</span></a></li>
 		<li><a href="#"><i class="fa fa-files-o"></i> <span>Folder/Flyer</span></a></li>
 		<li><a href="#"><i class="fa fa-id-card-o"></i> <span>Cartão de Visitas</span></a></li>
 		<li><a href="videos.html"><i class="fa fa-caret-square-o-right"></i> <span>Vídeos</span></a></li>
@@ -811,11 +811,11 @@ desired effect
 													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-pinterest"></span>Pinterest</a></li>
 													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-vimeo"></span>Vimeo</a></li>
 													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-youtube"></span>YouTube</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-linkedin"></span>LinkedIn</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-linkedin-square"></span>LinkedIn</a></li>
 													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-twitter"></span>Twitter</a></li>
 													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-google-plus"></span>Google+</a></li>
 													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-tumblr"></span>Tumblr</a></li>
-													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-facebook"></span>FaceBook</a></li>
+													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-facebook-square"></span>FaceBook</a></li>
 													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-flickr"></span>Flickr</a></li>
 													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-dropbox"></span>DropBox</a></li>
 													<li><a href="#mediaSelecioando" onclick="javascript: changeTipo(this);"><span class="fa fa-digg"></span>Digg</a></li>
@@ -836,28 +836,61 @@ desired effect
 										</div>
 									</div>
 								</div>
+								
 								<div class="col-sm-12">
 									<div class="form-group">
-										<div class="input-group">
-											<div class="input-group-btn">
-												<button type="button" class="btn btn-success"><span class="fa fa-facebook"></span></button>
-											</div>
-											<input type="text" value="http://www.facebook.com/nomeusuario" class="form-control">
-											<span class="input-group-btn">
-											  <button type="button" class="btn btn-warning btn-flat"><i class="fa fa-minus"></i></button>
-											</span>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="input-group">
-											<div class="input-group-btn">
-												<button type="button" class="btn btn-success"><span class="fa fa-linkedin"></span></button>
-											</div>
-											<input type="text" value="http://www.linkedin.com/in/nomeusuario" class="form-control">
-											<span class="input-group-btn">
-											  <button type="button" class="btn btn-warning btn-flat"><i class="fa fa-minus"></i></button>
-											</span>
-										</div>
+										<ul class="todo-list">
+											<li>
+												<span class="handle">
+													<i class="fa fa-ellipsis-v"></i>
+													<i class="fa fa-ellipsis-v"></i>
+												</span>
+												<i class="fa fa-link text-muted"></i>
+												<span class="text">http://www.associado.com</span>
+												<div class="tools">
+													<i class="fa fa-edit"></i>
+													<i class="fa fa-trash-o"></i>
+												</div>
+											</li>
+											<li>
+												<!-- drag handle -->
+												<span class="handle">
+													<i class="fa fa-ellipsis-v"></i>
+													<i class="fa fa-ellipsis-v"></i>
+												</span>
+												<i class="fa fa-facebook-square text-muted"></i>
+												<!-- todo text -->
+												<span class="text">http://www.facebook.com/nomeusuario</span>										
+												<div class="tools">
+													<i class="fa fa-edit"></i>
+													<i class="fa fa-trash-o"></i>
+												</div>
+											</li>
+											<li>
+												<span class="handle">
+													<i class="fa fa-ellipsis-v"></i>
+													<i class="fa fa-ellipsis-v"></i>
+												</span>
+												<i class="fa fa-linkedin-square text-muted"></i>
+												<span class="text">http://www.linkedin.com/in/nomeusuario</span>
+												<div class="tools">
+													<i class="fa fa-edit"></i>
+													<i class="fa fa-trash-o"></i>
+												</div>
+											</li>
+											<li>
+												<span class="handle">
+												<i class="fa fa-ellipsis-v"></i>
+												<i class="fa fa-ellipsis-v"></i>
+												</span>
+												<i class="fa fa-twitter text-muted"></i>
+												<span class="text">https://www.twitter.com/nomeusuario</span>
+												<div class="tools">
+													<i class="fa fa-edit"></i>
+													<i class="fa fa-trash-o"></i>
+												</div>
+											</li>
+										</ul>
 									</div>
 								</div>
 								
@@ -912,6 +945,8 @@ desired effect
 
 <!-- jQuery 3 -->
 <script src="../components/jquery/dist/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="../components/jquery-ui/jquery-ui.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
@@ -932,6 +967,14 @@ desired effect
 <script>
  $(function () {
 	/* jQueryKnob */
+	
+	 // jQuery UI sortable for the todo list
+	$('.todo-list').sortable({
+		placeholder         : 'sort-highlight',
+		handle              : '.handle',
+		forcePlaceholderSize: true,
+		zIndex              : 999999
+	});
 
     $(".knob").knob({
       /*change : function (value) {
@@ -995,8 +1038,7 @@ desired effect
     $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
       checkboxClass: 'icheckbox_minimal-blue',
       radioClass   : 'iradio_minimal-blue'
-    })
-	
+    });
 	
  });
 	function changeTipo(obj){
