@@ -5154,3 +5154,16 @@ span.form-control {
 .bootstrap-tagsinput {
 	width: 100%;
 }
+
+.center-image img {
+    margin: 0 auto;
+}
+.recuo {
+    text-indent: 3em;
+}
+
+.btn-modal-produto {
+	position: absolute;
+    top: 0;
+    right: 0;
+}
