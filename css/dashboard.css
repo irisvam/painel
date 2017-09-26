@@ -650,7 +650,7 @@ a:focus {
 .main-sidebar .user-panel,
 .sidebar-menu > li.header {
   white-space: nowrap;
-  overflow: hidden;
+  overflow: initial;
 }
 .sidebar-menu:hover {
   overflow: visible;
@@ -5166,4 +5166,29 @@ span.form-control {
 	position: absolute;
     top: 0;
     right: 0;
+}
+
+h3.popover-title {
+	padding: 8px 14px;
+    margin: 0;
+    font-size: 14px;
+	font-weight: 700;
+	color: #333;
+}
+.popover-content {
+	color: #333;
+}
+.popover {
+	min-width: 250px;
+}
+.sidebar .navegacao-usuario a.dropdown-toggle {
+	color: #fff;
+    font-size: 11px;
+}
+.sidebar .navegacao-usuario ul.dropdown-menu {
+	background: #1a2226;
+	min-width: auto;
+}
+.sidebar .navegacao-usuario ul.dropdown-menu>li>a {
+	padding: 3px 10px;
 }
