@@ -145,7 +145,7 @@ desired effect
                         <small><i class="fa fa-clock-o"></i> 1 dia</small>
                       </h4>
                       <!-- The message -->
-                      <p>Acabei de atualizar meu portifólio!</p>
+                      <p>Acabei de atualizar meu portfólio!</p>
                     </a>
                   </li>
                   <!-- end message -->
@@ -340,7 +340,7 @@ desired effect
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Portifólio</a>
+                  <a href="#" class="btn btn-default btn-flat">Portfólio</a>
                 </div>
                 <div class="pull-right">
                   <a href="../index.html" class="btn btn-default btn-flat">Sair</a>
@@ -366,7 +366,18 @@ desired effect
         <div class="pull-left info">
           <p>Nome Usuário</p>
           <!-- Status -->
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+			<div class="dropdown navegacao-usuario">
+				<a href="#" class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					<i class="fa fa-circle text-success"></i> Online
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<li><a href="#"><i class="fa fa-circle text-success"></i>Online</a></li>
+					<li><a href="#"><i class="fa fa-circle text-danger"></i>Não-incomodar</a></li>
+					<li><a href="#"><i class="fa fa-circle text-warning"></i>Ocupado</a></li>
+					<li><a href="#"><i class="fa fa-circle"></i>Mostrar Offline</a></li>
+				</ul>
+			</div>
         </div>
       </div>
 
@@ -378,7 +389,7 @@ desired effect
         <li><a href="painel.html"><i class="fa fa-dashboard"></i> <span>Painel de Controle</span></a></li>
 		<li><a href="perfil.html"><i class="fa fa-user-circle"></i> <span>Perfil</span></a></li>
 		<li class="header">SERVIÇOS</li>
-		<li><a href="portifolio.html"><i class="fa fa-address-book-o"></i> <span>Portifólio</span></a></li>
+		<li><a href="portifolio.html"><i class="fa fa-address-book-o"></i> <span>Portfólio</span></a></li>
 		<li><a href="#"><i class="fa fa-files-o"></i> <span>Folder/Flyer</span></a></li>
 		<li><a href="#"><i class="fa fa-id-card-o"></i> <span>Cartão de Visitas</span></a></li>
 		<li><a href="videos.html"><i class="fa fa-caret-square-o-right"></i> <span>Vídeos</span></a></li>
@@ -451,7 +462,7 @@ desired effect
       <div class="row">
         <div class="col-lg-2 col-sm-4 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-aqua">
+          <div class="small-box bg-aqua" title="Valor Possível" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Valor total estimado se todos os afiliados estiverem ativos até o próximo fechamento do mês.">
             <div class="inner">
               <h3><sup style="font-size: 20px">R$</sup>15.000</h3>
 
@@ -465,7 +476,7 @@ desired effect
         <!-- ./col -->
         <div class="col-lg-2 col-sm-4 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-aqua">
+          <div class="small-box bg-aqua" title="Valor Comissões" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Valor estimado referente as comissões se todos os afiliados estiverem ativos até o próximo fechamento do mês.">
             <div class="inner">
               <h3><sup style="font-size: 20px">R$</sup>350</h3>
 
@@ -479,7 +490,7 @@ desired effect
         <!-- ./col -->
         <div class="col-lg-2 col-sm-4 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-aqua">
+          <div class="small-box bg-aqua" title="Valor Bônus" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Valor estimado referente aos bônus se todos os afiliados estiverem ativos até o próximo fechamento do mês.">
             <div class="inner">
               <h3><sup style="font-size: 20px">R$</sup>320</h3>
 
@@ -493,7 +504,7 @@ desired effect
         <!-- ./col -->
         <div class="col-lg-2 col-sm-4 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-aqua">
+          <div class="small-box bg-aqua" title="Valor Pendente" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Valor estimado referente aos afiliados que ainda não confirmaram suas situações como ativas até o momento.">
             <div class="inner">
               <h3><sup style="font-size: 20px">R$</sup>850</h3>
 
@@ -507,7 +518,7 @@ desired effect
         <!-- ./col -->
         <div class="col-lg-2 col-sm-4 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-blue">
+          <div class="small-box bg-blue" title="Valor Total" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Valor calculado até o momento referente aos afiliados que já confirmaram suas situações como ativas até o momento.">
             <div class="inner">
               <h3><sup style="font-size: 20px">R$</sup>2.200</h3>
 
@@ -521,7 +532,7 @@ desired effect
         <!-- ./col -->
         <div class="col-lg-2 col-sm-4 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-green">
+          <div class="small-box bg-green" title="Valor Disponível" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Valor já disponível para solicitação de saque desde o último fechamento.">
             <div class="inner">
               <h3><sup style="font-size: 20px">R$</sup>1.600</h3>
 
@@ -615,13 +626,12 @@ desired effect
 	<div class="row">
         <div class="col-lg-2 col-sm-4 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-aqua">
+          <div class="small-box bg-aqua" title="Afiliados de 1ºGrau" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Quantidade total de afiliados que você possui em 1º Grau.">
             <div class="inner">
               <h3>30</h3>
-
               <p>Afiliados de 1ºGrau</p>
             </div>
-            <div class="icon">
+            <div class="icon" >
               <i class="fa fa-user"></i>
             </div>
           </div>
@@ -629,7 +639,7 @@ desired effect
         <!-- ./col -->
         <div class="col-lg-2 col-sm-4 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-aqua">
+          <div class="small-box bg-aqua" title="Demais Afiliados" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Quantidade da soma dos outros afiliados em 2º e 3° Graus.">
             <div class="inner">
               <h3>350</h3>
 
@@ -643,7 +653,7 @@ desired effect
         <!-- ./col -->
         <div class="col-lg-2 col-sm-4 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-aqua">
+          <div class="small-box bg-aqua" title="Afiliados Ativos" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Quantidade total dos afiliados na situação ativa em 1º, 2º e 3° Graus até o momento.">
             <div class="inner">
               <h3>120</h3>
 
@@ -657,7 +667,7 @@ desired effect
         <!-- ./col -->
         <div class="col-lg-2 col-sm-4 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-aqua">
+          <div class="small-box bg-aqua" title="Afiliados Novos" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Quantidade de afiliados em 1º, 2º e 3° Graus novos neste mês até o momento.">
             <div class="inner">
               <h3>15</h3>
 
@@ -671,7 +681,7 @@ desired effect
         <!-- ./col -->
         <div class="col-lg-4 col-sm-8 col-xs-12">
           <!-- small box -->
-          <div class="info-box bg-green">
+          <div class="info-box bg-green" title="Situação Atual" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Seus pontos obtidos até o momento. Mantenha sua conta ativa para não perder seus Bônus e Comissões.">
             <span class="info-box-icon"><i class="fa fa-anchor"></i></span>
 
             <div class="info-box-content">
@@ -983,6 +993,8 @@ desired effect
 <script>
   $(function () {
 	/* jQueryKnob */
+	
+	$('[data-toggle="popover"]').popover(); 
 
     $(".knob").knob({
       /*change : function (value) {
