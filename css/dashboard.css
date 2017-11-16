@@ -5192,3 +5192,16 @@ h3.popover-title {
 .sidebar .navegacao-usuario ul.dropdown-menu>li>a {
 	padding: 3px 10px;
 }
+.direct-temas {
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 600px;
+}
+.direct-temas .row {
+	margin: 0px 5px;
+}
+@media (min-width: 768px) {
+	.direct-temas {
+		height: 400px;
+	}
+}
