@@ -396,8 +396,8 @@ desired effect
 		<li><a href="perfil.html"><i class="fa fa-user-circle"></i> <span>Perfil</span></a></li>
 		<li class="header">SERVIÇOS</li>
 		<li class="active"><a href="#"><i class="fa fa-address-book-o"></i> <span>Portfólio</span></a></li>
-		<li><a href="#"><i class="fa fa-files-o"></i> <span>Folder/Flyer</span></a></li>
-		<li><a href="#"><i class="fa fa-id-card-o"></i> <span>Cartão de Visitas</span></a></li>
+<!-- 		<li><a href="#"><i class="fa fa-files-o"></i> <span>Folder/Flyer</span></a></li> -->
+<!-- 		<li><a href="#"><i class="fa fa-id-card-o"></i> <span>Cartão de Visitas</span></a></li> -->
 		<li><a href="videos.html"><i class="fa fa-caret-square-o-right"></i> <span>Vídeos</span></a></li>
 		<li class="header">FINCANCEIRO</li>
 		<li><a href="#"><i class="fa fa-shopping-cart"></i> <span>Mensalidade</span></a></li>
@@ -901,13 +901,68 @@ desired effect
 							<button id="btn-produto" type="button" class="btn btn-info btn-sm" data-widget="collapse">
 								<i class="fa fa-chevron-up"></i>
 							</button>
-							<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-produto" title="Novo Produto">
+							<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-outros" title="Novo Item">
 								<i class="fa fa-plus"></i>
 							</button>
 						</div>
 					</div>
 					<!-- /.box-header -->
 					<div class="box box-widget box-body">
+						<section class="box-widget">
+							<div class="row">
+								<div class="col-md-3 center-image text-center">
+									<img class="img-responsive" src="../img/250x250.png">
+								</div>
+								<div class="col-md-8">
+									<h2 class="page-header">Curso em Vídeo de Inglês </h2>
+									
+									<p class="recuo">
+										Aprenda o a língua Inglesa da maneira mais fácil e no seu tempo. Adquira este curso em vídeo totalmente on-line e comece a falar inglês hoje mesmo.
+									</p>
+									<p class="recuo">
+										Este curso vem com vídeos ensinando desde o básico ao mais avançado, com frases prontas diretas para ser usadas no seu dia-a-dia. Acesse o link abixo e descubra mais...
+									</p>
+									
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 text-center">
+									<br/>
+									<a href="https://www.w3schools.com/tags/att_a_href.asp" target="_blank" alt="">https://www.w3schools.com/tags/att_a_href.asp</a>
+									<hr/>
+								</div>
+							</div>
+							<button type="button" class="btn btn-box-tool pull-right btn-modal-produto" data-toggle="modal" data-target="#modal-outros" title="Editar Item">
+								<i class="fa fa-pencil-square-o fa-2x"></i>
+							</button>
+						</section>
+						<section class="box-widget">
+							<div class="row">
+								<div class="col-md-3 center-image text-center">
+									<img class="img-responsive" src="../img/250x250.png">
+								</div>
+								<div class="col-md-8">
+									<h2 class="page-header">Como Ganhar Dinheiro na Internet</h2>
+									
+									<p class="recuo">
+										Se você pensa que a internet é o futuro meio de ganhar dinheiro, saiba que o futuro já está aí. Venha conhecer essa estratégia de como conseguir seu primeiro milhão.
+									</p>
+									<p class="recuo">
+										E não para por pára por aí, vamos te mostrar os melhor caminhos para conseguir fazer seu próprio negócio e lucrar com isso. Acesse o link abaixo para saber como ganhar dinheiro com a internet.
+									</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 text-center">
+									<br/>
+									<a href="https://www.w3schools.com/tags/att_a_href.asp" target="_blank" alt="">https://www.w3schools.com/tags/att_a_href.asp</a>
+									<hr/>
+								</div>
+							</div>
+							<button type="button" class="btn btn-box-tool pull-right btn-modal-produto" data-toggle="modal" data-target="#modal-outros" title="Editar Item">
+								<i class="fa fa-pencil-square-o fa-2x"></i>
+							</button>
+						</section>
 						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
 							<section class="box-widget">
 								<div class="row">
@@ -1020,7 +1075,7 @@ desired effect
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
 							<section class="box-widget">
-								<div class="row">
+								<div class="row">	
 									<div class="col-xs-10 center-image text-center">
 										<img class="img-responsive" src="../img/250x250.png">
 									</div>
@@ -1087,6 +1142,16 @@ desired effect
 								</div>
 								<div class="col-md-8">
 									<div class="form-group">
+										<label for="selectModelo" class="col-sm-2 control-label">Modelo</label>
+										<div class="col-sm-6">
+											<select id="selectCivil" class="form-control">
+												<option>Selecione...</option>
+												<option>Padrão</option>
+												<option selected>Simplificado</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
 										<label for="inputProduto" class="col-sm-2 control-label">Produto</label>
 										<div class="col-sm-10">
 											<input type="text" class="form-control" id="inputProduto" placeholder="Nome do Produto">
@@ -1112,82 +1177,6 @@ desired effect
 			<!-- /.modal-dialog -->
         </div>
 		
-		<div class="row">
-			<div class="col-md-12">
-				<div id="box-outros" class="box box-info">
-					<div class="box-header with-border">
-						<h3 class="box-title">Outros <small>Produtos e Serviços que você também deseja divulgar</small></h3>
-						<div class="pull-right box-tools">
-							<button id="btn-outros" type="button" class="btn btn-info btn-sm" data-widget="collapse">
-								<i class="fa fa-chevron-up"></i>
-							</button>
-							<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-outros" title="Novo Item">
-								<i class="fa fa-plus"></i>
-							</button>
-						</div>
-					</div>
-					<!-- /.box-header -->
-					<div class="box box-widget box-body">
-						<section class="box-widget">
-							<div class="row">
-								<div class="col-md-3 center-image text-center">
-									<img class="img-responsive" src="../img/250x250.png">
-								</div>
-								<div class="col-md-8">
-									<h2 class="page-header">Curso em Vídeo de Inglês </h2>
-									
-									<p class="recuo">
-										Aprenda o a língua Inglesa da maneira mais fácil e no seu tempo. Adquira este curso em vídeo totalmente on-line e comece a falar inglês hoje mesmo.
-									</p>
-									<p class="recuo">
-										Este curso vem com vídeos ensinando desde o básico ao mais avançado, com frases prontas diretas para ser usadas no seu dia-a-dia. Acesse o link abixo e descubra mais...
-									</p>
-									
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12 text-center">
-									<br/>
-									<a href="https://www.w3schools.com/tags/att_a_href.asp" target="_blank" alt="">https://www.w3schools.com/tags/att_a_href.asp</a>
-									<hr/>
-								</div>
-							</div>
-							<button type="button" class="btn btn-box-tool pull-right btn-modal-produto" data-toggle="modal" data-target="#modal-outros" title="Editar Item">
-								<i class="fa fa-pencil-square-o fa-2x"></i>
-							</button>
-						</section>
-						<section class="box-widget">
-							<div class="row">
-								<div class="col-md-3 center-image text-center">
-									<img class="img-responsive" src="../img/250x250.png">
-								</div>
-								<div class="col-md-8">
-									<h2 class="page-header">Como Ganhar Dinheiro na Internet</h2>
-									
-									<p class="recuo">
-										Se você pensa que a internet é o futuro meio de ganhar dinheiro, saiba que o futuro já está aí. Venha conhecer essa estratégia de como conseguir seu primeiro milhão.
-									</p>
-									<p class="recuo">
-										E não para por pára por aí, vamos te mostrar os melhor caminhos para conseguir fazer seu próprio negócio e lucrar com isso. Acesse o link abaixo para saber como ganhar dinheiro com a internet.
-									</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12 text-center">
-									<br/>
-									<a href="https://www.w3schools.com/tags/att_a_href.asp" target="_blank" alt="">https://www.w3schools.com/tags/att_a_href.asp</a>
-									<hr/>
-								</div>
-							</div>
-							<button type="button" class="btn btn-box-tool pull-right btn-modal-produto" data-toggle="modal" data-target="#modal-outros" title="Editar Item">
-								<i class="fa fa-pencil-square-o fa-2x"></i>
-							</button>
-						</section>
-					</div>
-				</div>
-			</div>
-		</div>
-		
 		<div class="modal fade" id="modal-outros">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
@@ -1195,7 +1184,7 @@ desired effect
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<h4 class="modal-title">Outros Itens</h4>
+						<h4 class="modal-title">Produtos</h4>
 					</div>
 					<div class="modal-body">
 						<form class="form-horizontal">
@@ -1229,6 +1218,16 @@ desired effect
 									</div>
 								</div>
 								<div class="col-md-8">
+									<div class="form-group">
+										<label for="selectModelo" class="col-sm-2 control-label">Modelo</label>
+										<div class="col-sm-6">
+											<select id="selectCivil" class="form-control">
+												<option>Selecione...</option>
+												<option selected>Padrão</option>
+												<option>Simplificado</option>
+											</select>
+										</div>
+									</div>
 									<div class="form-group">
 										<label for="inputItem" class="col-sm-2 control-label">Item</label>
 										<div class="col-sm-10">
