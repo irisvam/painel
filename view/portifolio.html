@@ -713,6 +713,58 @@ desired effect
 			</div>
 			<!-- /.modal-dialog -->
         </div>
+        
+		
+		<div class="row">
+			<div class="col-md-12">
+				<div id="box-divulgador" class="box box-success">
+					<div class="box-header with-border">
+						<h2 class="box-title">Divulgador Divulplace <small>divulgue nossos serviços e ganhe uma renda extra</small></h2>
+					</div>
+					<!-- /.box-header -->
+					<div class="box box-widget box-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<div class="col-md-12">
+									<label>Portfólio Divulplace</label>
+								</div>
+								<div class="col-xs-offset-1 col-xs-11">
+									<!-- Default checked -->
+									<div class="custom-control custom-radio">
+									  <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+									  <label class="custom-control-label" for="defaultChecked"> Padrão (com as informações para Divulgadores)</label>
+									</div>
+									<!-- Default unchecked -->
+									<div class="custom-control custom-radio">
+									  <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+									  <label class="custom-control-label" for="defaultUnchecked"> Customizado (acrescente seus próprios produtos e serviços)</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-12">
+									<label>Oportunidade de Negócio Divulplace</label>
+								</div>
+								<div class="col-xs-offset-1 col-xs-11">
+									<!-- Default checked -->
+									<div class="custom-control custom-radio">
+									  <input type="radio" class="custom-control-input" id="oportunidadeChecked" name="oportunidadeNegocio" checked disabled>
+									  <label class="custom-control-label" for="oportunidadeChecked"> Expandido </label>
+									</div>
+									<!-- Default unchecked -->
+									<div class="custom-control custom-radio">
+									  <input type="radio" class="custom-control-input" id="oportunidadeUnChecked" name="oportunidadeNegocio" disabled>
+									  <label class="custom-control-label" for="oportunidadeUnChecked"> Suprimido </label>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="btn btn-primary pull-right" data-dismiss="modal">Salvar</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+        
 		<div class="row">
 			<div class="col-md-12">
 				<div id="box-servico" class="box box-info">
@@ -1144,7 +1196,7 @@ desired effect
 									<div class="form-group">
 										<label for="selectModelo" class="col-sm-2 control-label">Modelo</label>
 										<div class="col-sm-6">
-											<select id="selectCivil" class="form-control">
+											<select id="selectModelo" class="form-control">
 												<option>Selecione...</option>
 												<option>Padrão</option>
 												<option selected>Simplificado</option>
@@ -1221,7 +1273,7 @@ desired effect
 									<div class="form-group">
 										<label for="selectModelo" class="col-sm-2 control-label">Modelo</label>
 										<div class="col-sm-6">
-											<select id="selectCivil" class="form-control">
+											<select id="selectModelo" class="form-control">
 												<option>Selecione...</option>
 												<option selected>Padrão</option>
 												<option>Simplificado</option>
